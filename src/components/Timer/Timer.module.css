@@ -1,0 +1,84 @@
+/* ЦИФЕРБЛАТ */
+.timeG, .timeL {
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	
+}
+
+.timeL {
+	justify-content: center;
+}
+
+/* ЦИФРЫ */
+.timeL span{
+	display: flex;
+	justify-content: center;
+}
+/* ////////// */
+/* ////////////// */
+
+/* КНОПКИ */
+.buttons {
+	position: relative;
+	display: flex;
+	justify-content: end;
+	gap: 10px;
+	margin-top: 10px;
+	right: 10px;
+} /* Общий блок */
+
+
+.btn { 
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	position: relative;
+} /* Общий стиль кнопок */
+
+.btn:hover {
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+} /* Общий стиль кнопок при наведении */
+
+.play::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.65rem 0 0.65rem 1rem; /* Верхняя, правая, нижняя, левая границы треугольника */
+	top: 19%;
+	left: 30%;
+  } /* Иконка плей */
+
+/* Иконка пауза */
+.pause::before,
+.pause::after {
+  content: "";
+  position: absolute;
+  width: 0.3rem;
+  height: 1rem;
+  top: 25%;
+}
+
+.pause::before {
+  left: 27.5%;
+}
+
+.pause::after {
+  right: 27.5%;
+}
+/* ///////////////////////////////// */
+
+.reset::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1rem;
+ 	height: 1rem;
+} /* Иконка сброс */
+
+/* ////////////////////////////////////// */

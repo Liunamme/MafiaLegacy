@@ -1,0 +1,47 @@
+.additionalUnit { /* Общий стиль блока additionalUnit (включает в себя ...) */
+	position: relative;
+	width: 30%;
+	min-width: 210px;
+	height: 100vh;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.additionalUnitBlock { /* Стиль блока additionalUnit*/
+	transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+	right: 30px;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.endGameBtn  { /* Cтиль кнопки 'Завершить игру'*/
+	width: 100%;
+	height: 50px;
+	min-height: 50px; 
+	border: 0px;
+	border-radius: 0px 0px 20px 20px;
+	cursor: pointer;
+}
+
+.content {
+	overflow: auto;
+	border-radius: 20px 20px 0px 0px;
+}
+
+
+.timePanel { /* Панель со временем игры */
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+
+.infoPanel { 
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 0px;
+	font-size: 1.2rem;
+} /* Информационный блок */
+
+/* ///////////////////////////////////// */

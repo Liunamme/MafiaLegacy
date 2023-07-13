@@ -1,0 +1,26 @@
+.controlPanel { /* Общий стиль блока parametres (включает в себя input(header), блок main) */
+	width: 65%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 10px;
+}
+
+.timeVoteBlock {
+	transform: perspective(400px) rotateX(-1deg) rotateY(0deg);
+	left: 30px;
+	box-shadow: 0px -5px 10px rgb(0, 0, 0);
+	height: 25% !important;
+	padding: 10px 10px;
+}
+
+.playerPanelBlock {
+	transform: perspective(400px) rotateX(1deg) rotateY(0deg);
+	left: 30px;
+	box-shadow: 0px 5px 10px rgb(0, 0, 0);
+	height: calc(65% - 10px) !important;
+	padding: 10px 10px;
+}
+

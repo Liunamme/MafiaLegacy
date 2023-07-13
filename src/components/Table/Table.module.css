@@ -1,0 +1,33 @@
+.table {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+  }
+
+  tbody {
+	overflow-y: auto;
+  }
+
+  tbody::-webkit-scrollbar {
+	display: none;
+  }
+  .tableRow {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	padding: 0px 20px 0px 0px;
+  }
+  
+  .tableColumn {
+	display: flex;
+	justify-content: center;
+  }
+
+
+  .tableColumn:last-child {
+	display: flex;
+	justify-content: flex-end;
+  }

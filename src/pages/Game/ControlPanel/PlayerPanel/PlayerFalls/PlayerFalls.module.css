@@ -1,0 +1,22 @@
+
+/* Кнопки фоллов */
+.playerFalls {
+	border-radius: 10px;
+}
+
+.btn {
+	width: 50px;
+	border-right: 1px solid black;
+	border-radius: 0;
+}
+
+.btn:first-of-type {
+	border-radius: 10px 0px 0px 10px;
+	
+}
+
+.btn:last-of-type {
+	border-radius: 0px 10px 10px 0px;
+	border-right: 0;
+}
+/* //////////////// */

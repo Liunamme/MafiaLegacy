@@ -1,0 +1,20 @@
+.playerPanel { /* Общий стиль блока parametres (включает в себя input(header), блок main) */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	overflow: auto;
+}
+
+.playerPanel::-webkit-scrollbar { /* Отключение визуального скролла в players */
+	display: none; 
+}
+
+/* Блок игрока */
+.player {
+	display: flex;
+	width: 100%;
+	height: 30px;
+	gap: 10px
+}

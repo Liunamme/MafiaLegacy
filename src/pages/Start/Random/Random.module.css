@@ -1,0 +1,107 @@
+.random { /* Общий стиль внешнего блока random (включает в себя Переключатель между рандомами input(mainBtn), блок рандомайзер(randomPlayers)) */
+	position: relative;
+	width: 45%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.randomBlock {
+	left: 30px;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+	.mainBtn{ /* Стиль переключателя между рандомами input(mainBtn) */
+		width: 100%;
+		height: 50px;
+		min-height: 50px; 
+		border: 0px;
+		border-radius: 20px 20px 0px 0px;
+	}
+
+	.randomPlayers { /* Общий стиль внутреннего блока randomPlayers (включает в себя блок с игроками (players) и блок кнопок (btns)*/
+		position: relative;
+		width: 100%;
+		height: calc(100% - 50px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 0px 0px 20px 20px;
+	}
+	
+		.players { /* Общий стиль блока players (включает в себя блок игрока (player) */
+			flex-grow: 1;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 20px 10px;
+			font-size: 1.2rem;
+			overflow-y: auto;
+		}
+
+		.players::-webkit-scrollbar { /* Отключение визуального скролла в players */
+			display: none; 
+		}
+
+			.player { /* Стиль блока игрока player (включает в себя span) */
+				width: 100%;
+				display: flex;
+				gap: 10px;
+			}
+
+				.player span{ /* Общий стиль span */
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 200px;
+					height: 30px;
+					border: 1px solid black;
+					border-radius: 20px;
+					box-shadow: -3px 1px 4px black;
+				}
+
+				.player span:first-of-type{ /* Стиль первого span */
+					width: 40px;
+				}
+
+				.player span:last-of-type{ /* Стиль последнего span */
+					width: 100%;
+					cursor: pointer;
+				}
+
+				.player span:last-of-type:hover{ /* Последний span при наведении */
+					transform: scale(1.01);
+					transition: all 0.2s ease-in-out;
+				}
+
+		.btns { /* Общий стиль блока кнопок btns (включает в себя кнопки Скопировать и Рандом (button) */
+			width: 100%;
+			height: 50px;
+			min-height: 50px;
+			display: flex;
+		}
+			
+			.btns button{ /* Стиль кнопок Скопировать и Рандом */
+				width: 50%;
+				height: 100%;
+			}
+
+			.btns button:first-of-type{ /* Стиль первой кнопки (Скопировать) */
+				width: 50%;
+				height: 100%;
+				border-radius: 0px 0px 0px 20px;
+				border-left: 0;
+				border-top: 0;
+				border-bottom: 0;
+				
+			}
+
+			.btns button:last-of-type{ /* Стиль последней кнопки (Рандом) */
+				width: 50%;
+				height: 100%;
+				border-radius: 0px 0px 20px 0px;
+				border: 0;
+			}

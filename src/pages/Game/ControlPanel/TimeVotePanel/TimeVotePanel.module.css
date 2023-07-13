@@ -1,0 +1,7 @@
+.timeVotePanel { /* Общий стиль блока parametres (включает в себя input(header), блок main) */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

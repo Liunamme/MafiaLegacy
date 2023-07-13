@@ -1,0 +1,9 @@
+.parametresSection { /* Общий стиль блока parametresBlock (включает в себя блоки с параметрами (parametr) */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	padding: 20px 10px;
+	align-items: center;
+	gap: 20px;
+}

@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+}
+
+/* Общие стили приложения */
+
+/* Переменные */
+:root {
+	--FontBold: 600;
+}
+/* //////////// */
+
+/* Общие стили элементов */
+h1 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+select {
+	border-radius: 10px;
+	padding: 10px 10px;
+}
+
+button, .btn, input {
+	height: 100%;
+	font-size: 1.1rem;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.btn:focus {
+	outline: none;
+  }
+
+button[disabled] {
+	opacity: 0.2;
+	cursor: auto;
+	pointer-events: none
+}
+/* ///////////// */
+
+.page {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.infoBlock button{
+	border-radius: 20px;
+	border: 0;
+	padding: 0px 10px;
+	font-weight: var(--FontBold);
+} /* Кнопки дисплея */
+
+.infoBlock .absoluteBtn {
+	position: absolute;
+	height: 2rem;
+	font-size: 1.2rem;
+	bottom: 20px;
+	right: 20px;
+	z-index: 3;
+} /* Кнопки дисплея с абсолютным позиционированием*/
+
+
+/* /////////////////// */
+
+.content {
+	position: relative;
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.content::-webkit-scrollbar { /* Отключение визуального скролла в main */
+	display: none; 
+  }
+
+
+.parametr{
+	align-items: center;
+	font-size: 3rem;
+	display: flex;
+	column-gap: 20px;
+	border: 2px solid;
+	border-radius: 20px;
+	width: 90%;
+	padding: 10px 10px;
+	justify-content: space-between;
+}
+
+.parametr select{ /* Стиль select для выбора игроков */
+	text-align: center;
+	font-size: 2rem;
+	border: 0;
+	cursor: pointer;
+	height: 100%;
+}
+
+
+.parametr select:focus { /* Отключение дефолтной обводки браузера при фокусе select */
+	outline: none;
+}
+
+.parametr .selectBlock {
+	border-radius: 10px;
+}
+
+.parametr option{ /* Стиль option для выбора игроков */
+	font-size: 1.5rem;
+}
+
+
+.switchON .switchCircle, .switchON2 .switchCircle{
+	transform: translateX(80.5%) translateY(-20%);
+}
+	
+.switchOFF .switchCircle{
+	transform: translateX(-20%) translateY(-20%);
+}
+
+.switchOFF1 .switchCircle{
+	transform: translateX(30%) translateY(-20%);
+}
+	
+.switchON1 .switchCircle{
+	transform: translateX(-20%) translateY(-20%);
+}
+
+.smile {
+	font-family: 'Noto Emoji', sans-serif;
+}
+
+.roleSpan {
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+}
+
+
+.overflowContainer {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+
+/* ТАБЛИЦА */
+.tableResult .idPlayer {
+	width: 50px;
+}
+
+.tableResult .characteristicsPlayer {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.tableResult .characteristicsPlayer div{
+	width: 100px;
+}
+
+.tableResult .characteristicsPlayer .rolePlayer{
+	justify-content: start;
+}
+
+.tableResult .characteristicsPlayer .roleTG{
+	flex-grow: 1;
+}
+
+
+
+/* ................... */
+
+@media (max-height: 820px) {
+	.overflowContainer {
+		max-height: 610px; /* Задайте нужную максимальную высоту */
+	}
+}
+
+@media (max-height: 725px) {
+	.overflowContainer {
+  max-height: 530px; /* Задайте нужную максимальную высоту */
+	}
+}
+
+@media (max-height: 645px) {
+	.overflowContainer {
+  max-height: 450px; /* Задайте нужную максимальную высоту */
+	}
+}
+/* ................................ */

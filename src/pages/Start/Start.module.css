@@ -1,0 +1,6 @@
+.start {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	gap: 120px;
+}

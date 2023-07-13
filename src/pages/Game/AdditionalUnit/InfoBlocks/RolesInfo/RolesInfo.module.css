@@ -1,0 +1,28 @@
+.rolesInfo { 
+	display: flex;
+	flex-direction: column;
+	z-index: 3;
+}
+
+.rolesInfo h1 {
+	z-index: 3;
+}
+
+.rolesInfo span{
+	display: flex;
+	align-items: center;
+	z-index: 3;
+}
+
+/* Стиль отображения ролей в блоке rolesInfo */
+.role {
+	display: flex;
+	gap: 10px;
+	z-index: 3;
+}
+
+.role span:first-of-type {
+	width: 20px;
+	z-index: 3;
+}
+/* ///////////////////////////////////// */

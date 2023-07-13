@@ -1,0 +1,63 @@
+.votePanel {
+	position: relative;
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0px 10px;
+	justify-content: center;
+}/* Блок с выставленными игроками в TimeVotePanel*/
+
+.panel {
+	width: 100%;
+	height: 95%;
+}
+
+.panel h1 {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.voted {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	overflow: hidden;
+	align-content: start;
+} /* Выставленные игроки*/
+
+.circle {
+	width: 3rem;
+	height: 3rem;
+	border: 0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	font-size: 2rem;
+} /* Выставленный игрок*/
+
+@media (max-width: 1280px) {
+	.voted {
+		gap: 10px;
+
+	} /* Выставленные игроки*/
+	
+	.circle {
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 0;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.7rem;
+		font-weight: 600;
+	} /* Выставленный игрок*/
+}

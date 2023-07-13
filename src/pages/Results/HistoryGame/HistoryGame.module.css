@@ -1,0 +1,28 @@
+.historyGame {
+	height: 100vh;
+	width: 32.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+}
+
+.historyGameBlock {
+	box-shadow: 0px 5px 10px rgb(0, 0, 0);
+	width: 100%;
+	height: 100% !important;
+}
+
+.content {
+	gap: 20px;
+	overflow: hidden;
+	justify-content: space-between;
+}
+
+.timeInfo {
+	display: flex;
+	justify-content: end;
+	width: 100%;
+	gap: 10px;
+	align-items: center;
+}

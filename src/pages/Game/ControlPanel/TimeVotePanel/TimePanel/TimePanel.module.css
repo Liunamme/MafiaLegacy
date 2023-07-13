@@ -1,0 +1,11 @@
+.timePanel{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	font-size: 6rem;
+	border-right: 2px solid black;
+	padding: 0px 10px;
+	justify-content: center;
+	align-items: center;
+} /* Блок с таймером в TimeVotePanel*/

@@ -1,0 +1,4 @@
+.kickInfo {
+	display: flex;
+	flex-direction: column;
+}
