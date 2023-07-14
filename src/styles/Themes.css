@@ -29,7 +29,7 @@
 
 	--TableSecondColor: #446121; /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(97, 137, 47, 0.5);
+	--SwitchBackgroundOFF: rgb(97, 137, 47);
 	--SwitchCircle: #000000;
   }
 
@@ -65,7 +65,7 @@
 
 	--TableSecondColor: #446121; /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(97, 137, 47, 0.5);
+	--SwitchBackgroundOFF: rgb(97, 137, 47);
 	--SwitchCircle: #ffffff;
   }
 
@@ -74,11 +74,11 @@
 	--BoldBlackTextDisplay: 600;
 	--InfoBlockColorHover: #505050;
 	--InfoBlockBackgroundColor: rgba(199, 199, 199, 1); /* Цвет заднего фона информационного блока */
-	--InfoBlockBackgroundColorDisplay: rgba(199, 199, 199, 0.5);
+	--InfoBlockBackgroundColorDisplay: rgb(199, 199, 199);
 
 	--TableSecondColor: rgb(163, 163, 163); /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(199, 199, 199, 0.5);
+	--SwitchBackgroundOFF: rgb(199, 199, 199);
 	--SwitchCircle: #000000;
   }
 
@@ -90,7 +90,7 @@
 
 	--TableSecondColor: rgb(122, 29, 29); /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(221, 67, 67, 0.5);
+	--SwitchBackgroundOFF: rgb(221, 67, 67);
 	--SwitchCircle: #ffffff;
   }
 
@@ -101,7 +101,7 @@
 
 	--TableSecondColor: #494949; /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(54, 54, 54, 0.5); /* Цвет отключенного переключателя */
+	--SwitchBackgroundOFF: rgb(54, 54, 54); /* Цвет отключенного переключателя */
 	--SwitchCircle: #ffffff; /* Цвет кружочка переключателя */
   }
   /* ............ */
@@ -138,7 +138,7 @@
 
 	--TableSecondColor: rgb(221, 144, 163); /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(227, 175, 188, 0.5);
+	--SwitchBackgroundOFF: rgb(227, 175, 188);
 	--SwitchCircle: #000000;
 }
 
@@ -149,7 +149,7 @@
 
 	--TableSecondColor: #5e5e5e; /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(54, 54, 54, 0.5);
+	--SwitchBackgroundOFF: rgb(54, 54, 54);
 	--SwitchCircle: #ffffff;
 }
 /* ................. */
@@ -198,7 +198,7 @@
 
 	--TableSecondColor: rgb(9, 61, 34); /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(4, 29, 16, 0.5);
+	--SwitchBackgroundOFF: rgb(4, 29, 16);
 	--SwitchCircle: #1AF580;
 }
 
@@ -254,7 +254,7 @@
 
 	--TableSecondColor: #352915; /* 2й цвет таблицы */
 
-	--SwitchBackgroundOFF: rgba(31, 24, 12, 0.5);
+	--SwitchBackgroundOFF: rgb(31, 24, 12);
 	--SwitchCircle: #ffc64a;
 }
 
@@ -440,6 +440,17 @@ background: var(--TableSecondColor);
 
 .switchOFF, .switchOFF1, .selectBlock {
 background: var(--SwitchBackgroundOFF);
+filter: brightness(0.6);
+}
+
+.switchON, .switchON1, .switchON2 {
+	background: var(--InfoBlockBackgroundColor);
+	filter: brightness(1);
+}
+
+.selectBlockON {
+filter: brightness(1);
+transition: var(--TransitionDefault);
 }
 
 .switchCircle {

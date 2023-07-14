@@ -25,14 +25,14 @@
 .mainDiv::before {
 	content: "";
 	position: absolute;
-	top: -0.5%;
-	left: 0.5%; 
-	width: 99%; 
-	height: 99%; 
+	top: 2.5%;
+	left: 1.5%; 
+	width: 97%; 
+	height: 93%; 
 	border-radius: 10px; 
 	z-index: 0; 
-	filter: blur(20px);
-	animation: light-animation 0.04s infinite;
+	filter: blur(15px);
+	animation: light-animation 0.03s infinite;
 	will-change: transform, filter;
   }
 

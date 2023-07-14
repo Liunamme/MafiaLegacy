@@ -135,13 +135,13 @@ const ValuePlayers = ({ valuePlayers, setValuePlayers }) => {
 	// /////////////////////////////////
 
 
-
+	console.log();
 
 	// Отрисовка компонентов
 	return (
 		<div className='parametr'>
 			<div>КОЛ-ВО ИГРОКОВ:</div>
-			<div className={`${style.selectBlock} ${theme} selectBlock`}>
+			<div className={`${style.selectBlock} ${theme} selectBlock ${valuePlayers !== '#' ? 'selectBlockON' : ''}`}>
 				<InfoBlock classes={stateArr}>
 					<select
 						name="players"
