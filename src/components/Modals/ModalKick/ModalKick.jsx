@@ -57,6 +57,7 @@ const ModalKick = ({ visible, setVisible, gameParametres, setGameParametres, ite
 					<div className={style.kickBtns}>
 						<button className={style.btn} onClick={() => playerKick(item, 'Голосование')}>Голосование</button>
 						<button className={style.btn} onClick={() => playerKick(item, 'Убит')}>Убит</button>
+						<button className={style.btn} onClick={() => playerKick(item, 'Нарушение правил')}>Нарушение правил</button>
 					</div>
 				</div>
 			</InfoBlock>

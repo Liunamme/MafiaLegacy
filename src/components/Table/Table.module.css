@@ -30,4 +30,5 @@
   .tableColumn:last-child {
 	display: flex;
 	justify-content: flex-end;
+	text-align: end;
   }
