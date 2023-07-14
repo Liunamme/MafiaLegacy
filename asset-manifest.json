@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MafiaLegacy/static/css/main.15bd7d3f.css",
-    "main.js": "/MafiaLegacy/static/js/main.42242bd5.js",
+    "main.js": "/MafiaLegacy/static/js/main.5ac3cbe6.js",
     "static/media/falloutJazz.mp3": "/MafiaLegacy/static/media/falloutJazz.053d938fe8304ca6b82e.mp3",
     "static/media/pipboyPanel.svg": "/MafiaLegacy/static/media/pipboyPanel.0dec91a18e074248a9f3.svg",
     "static/media/EpilepsySans.ttf": "/MafiaLegacy/static/media/EpilepsySans.88a54509a9c5bfc72e7d.ttf",
@@ -13,10 +13,10 @@
     "static/media/timerSignal.mp3": "/MafiaLegacy/static/media/timerSignal.73ce06c838fecb2f3907.mp3",
     "index.html": "/MafiaLegacy/index.html",
     "main.15bd7d3f.css.map": "/MafiaLegacy/static/css/main.15bd7d3f.css.map",
-    "main.42242bd5.js.map": "/MafiaLegacy/static/js/main.42242bd5.js.map"
+    "main.5ac3cbe6.js.map": "/MafiaLegacy/static/js/main.5ac3cbe6.js.map"
   },
   "entrypoints": [
     "static/css/main.15bd7d3f.css",
-    "static/js/main.42242bd5.js"
+    "static/js/main.5ac3cbe6.js"
   ]
 }
