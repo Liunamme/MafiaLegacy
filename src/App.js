@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/App.css'
 import './styles/Themes.css'
 import AppRouter from './components/AppRouter';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { StoreContext } from './context/context';
 /////////////////////////////////////////////////////
 
@@ -81,7 +81,7 @@ const App = () => {
 			}} // в value нужно добавлять состояния, которые ме хотим передать другим компонентам (для чистаемости: 1 строчка - 1 состояние и функция для управления им)
 		>
 			<div className={`App ${theme}`}>
-				<Router basename={'/MafiaLegacy'}>
+				<Router>
 					<AppRouter />
 				</Router>
 			</div>
