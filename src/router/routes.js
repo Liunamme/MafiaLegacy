@@ -14,5 +14,3 @@ export const privateRoutes = [
 export const publicRoutes = [
 	{ path: '/login', element: <CustomLogin />, exact: true }, // Страница логина
 ]// Страницы доступные без аунтификации
-
-
