@@ -51,7 +51,7 @@ const Parametres = () => {
 					</div> {/* Сюда можно добавлять новые параметры */}
 					<ThemesBtn /> {/* Кнопка темы открывающая модальное окно с темами */}
 				</div>
-				<button onClick={() => startGameClick('/MafiaLegacy/game')} className={style.startGameBtn}>Начать игру</button>
+				<button onClick={() => startGameClick('/game')} className={style.startGameBtn}>Начать игру</button>
 			</Block>
 		</div>
 	);

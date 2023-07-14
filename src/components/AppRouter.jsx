@@ -18,18 +18,18 @@ const AppRouter = () => {
 		const storedPageNow = localStorage.getItem('pageNow');
 		if (auth === password) {
 			setIsAuth(password);
-			if (storedPageNow === '/MafiaLegacy/start') {
-				setPageNow('/MafiaLegacy/start');
-				navigate('/MafiaLegacy/start');
-			} else if (storedPageNow === '/MafiaLegacy/game') {
-				setPageNow('/MafiaLegacy/game');
-				navigate('/MafiaLegacy/game');
-			} else if (storedPageNow === '/MafiaLegacy/results') {
-				setPageNow('/MafiaLegacy/results');
-				navigate('/MafiaLegacy/results');
+			if (storedPageNow === '/start') {
+				setPageNow('/start');
+				navigate('/start');
+			} else if (storedPageNow === '/game') {
+				setPageNow('/game');
+				navigate('/game');
+			} else if (storedPageNow === '/results') {
+				setPageNow('/results');
+				navigate('/results');
 			}
 		} else {
-			navigate('/MafiaLegacy/login');
+			navigate('/login');
 		}
 	}, [navigate, password]); // Переадресовывает на нужную страницу, и на другие попасть невозможно
 

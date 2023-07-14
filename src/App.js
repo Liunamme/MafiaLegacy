@@ -81,7 +81,7 @@ const App = () => {
 			}} // в value нужно добавлять состояния, которые ме хотим передать другим компонентам (для чистаемости: 1 строчка - 1 состояние и функция для управления им)
 		>
 			<div className={`App ${theme}`}>
-				<Router>
+				<Router basename={'/MafiaLegacy'}>
 					<AppRouter />
 				</Router>
 			</div>

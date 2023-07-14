@@ -24,7 +24,7 @@ const Login = () => {
 		if (enteredPassword === password) {
 			setPassword(password);
 			localStorage.setItem('password', password);
-			localStorage.setItem('pageNow', '/MafiaLegacy/start');
+			localStorage.setItem('pageNow', '/start');
 			navigate('/');
 		} else {
 			setIsWrongPassword(true);
