@@ -33,7 +33,7 @@ const ModalWinner = ({ visible, setVisible, gameParametres, setGameParametres, t
 		localStorage.removeItem('timeGame'); // Удаление глобального таймера из localStorage
 		localStorage.setItem('gameParametres', JSON.stringify(updatedGameParametres)); // Сохранение прошедшей игры
 
-		changePage('/results'); // Переход на Results
+		changePage('/MafiaLegacy/results'); // Переход на Results
 	}; // Кнопка выброра победителя
 
 	// Отрисовка компонентов

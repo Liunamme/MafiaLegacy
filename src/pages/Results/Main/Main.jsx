@@ -45,7 +45,7 @@ const Main = () => {
 					</div>
 					<ThemesBtn /> {/* Кнопка темы открывающая модальное окно с темами */}
 				</div>
-				<button className={style.startGameBtn} onClick={() => newGameClick('/start')}>Новая игра</button>
+				<button className={style.startGameBtn} onClick={() => newGameClick('/MafiaLegacy/start')}>Новая игра</button>
 			</Block>
 		</div>
 	);
