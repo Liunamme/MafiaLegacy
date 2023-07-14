@@ -4,10 +4,10 @@
 	src: url('../fotns/EpilepsySans/EpilepsySans.ttf') format('truetype');
   }
 
-@font-face {
-	font-family: 'Default';
-	src: url('../fotns/DefaultFont/EpilepsySans.ttf') format('truetype');
-}
+  @font-face {
+	font-family: 'RubikRegular';
+	src: url('../fotns/RubikRegular/RubikRegular.ttf') format('truetype');
+  }
 
 @font-face {
 	font-family: 'Fallout';
@@ -15,7 +15,7 @@
 }
 /* //////////// */
   :root {
-	--DefaultFont: 'Default'; /* Общий шрифт */
+	--DefaultFont: 'RubikRegular'; /* Общий шрифт */
 	--PixelFont: 'EpilepsySans';
 	--TransitionDefault: all 0.2s ease-in-out;
   }
@@ -38,6 +38,7 @@
 
   /* Общие стили тёмных тем */
   .default, .dark1, .dark2, .dark3, .dark4 {
+	--DefaultFont: 'RubikRegular'; /* Общий шрифт */
 	--FontColor: #ffffff; /* Общий цвет текста */
 	--BackgroundColor: #474B4F; /* Общий цвет заднего фона */
 	--FontWeightLight: 200;
@@ -110,6 +111,7 @@
 
 /* Общие стили тёмных тем */
 .light1, .light2, .light3 {
+	--DefaultFont: 'RubikRegular'; /* Общий шрифт */
 	--FontColor: #000000; /* Общий цвет текста */
 	--BackgroundColor: #ffffff; /* Общий цвет заднего фона */
 
