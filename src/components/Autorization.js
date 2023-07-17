@@ -19,6 +19,7 @@ const Autorization = () => {
 		{ login: 'Ingrand', password: 'pass6', defauiltTheme: 'dark5' },
 		{ login: 'Lega', password: 'pass7', defauiltTheme: 'dark5' },
 		{ login: 'Passiflora', password: 'pass8', defauiltTheme: 'dark5' },
+		{ login: 'Crazy007', password: 'pass9', defauiltTheme: 'dark4' },
 	] // База пользователей
 	// /////////////////////
 
