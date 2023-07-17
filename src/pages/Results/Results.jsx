@@ -10,6 +10,7 @@ const Results = () => {
 	const { modalThemes, setModalThemes, theme, setTheme } = useContext(StoreContext); // Получение состояний из глобального хранилища
 	return (
 		<div className={`${style.results} page`}>
+			<span className='user'>{localStorage.getItem(`User`)}</span>
 			<ModalThemes visible={modalThemes} setVisible={setModalThemes} theme={theme} setTheme={setTheme} /> {/* Модалка с выбором темы */}
 			<Main />
 			<HistoryGame />

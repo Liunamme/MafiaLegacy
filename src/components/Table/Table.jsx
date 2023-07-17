@@ -4,8 +4,6 @@ import { StoreContext } from '../../context/context';
 
 const Table = ({ data }) => {
 	const { theme } = useContext(StoreContext); // Получение состояний из глобального хранилища
-
-	console.log(data);
 	return (
 		<table className={`${style.table} tableResult`}>
 			<thead>

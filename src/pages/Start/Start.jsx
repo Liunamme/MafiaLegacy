@@ -12,6 +12,7 @@ const Start = () => {
 	// Отрисовка компонентов
 	return (
 		<div className={`${style.start} page`}>
+			<span className='user'>{localStorage.getItem(`User`)}</span>
 			<ModalThemes visible={modalThemes} setVisible={setModalThemes} theme={theme} setTheme={setTheme} /> {/* Модалка с выбором темы */}
 			<RandomBlock /> {/* Рандомайзер */}
 			<Parametres /> {/* Настройка параметров игры */}
