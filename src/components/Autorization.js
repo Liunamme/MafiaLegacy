@@ -10,16 +10,17 @@ const Autorization = () => {
 	// Состояния
 	const [isAuth, setIsAuth] = useState(false); // Состояние авторизации
 	const dataUsers = [
+		{ login: 'Demo', password: 'Demo', defauiltTheme: 'dark1' },
 		{ login: 'Liunamme', password: 'termik2015', defauiltTheme: 'personal2' },
 		{ login: 'Diktatura', password: 'pass1', defauiltTheme: 'dark4' },
 		{ login: 'SoulMary', password: 'pass2', defauiltTheme: 'light1' },
-		{ login: 'Vey', password: 'pass3', defauiltTheme: 'dark4' },
+		{ login: 'VEY', password: 'blooda0mee', defauiltTheme: 'dark4off' },
 		{ login: 'Rbz', password: 'pass4', defauiltTheme: 'personal2' },
 		{ login: 'Commuraptor', password: 'pass5', defauiltTheme: 'light1' },
 		{ login: 'Ingrand', password: 'pass6', defauiltTheme: 'dark5' },
 		{ login: 'Lega', password: 'pass7', defauiltTheme: 'dark5' },
 		{ login: 'Passiflora', password: 'pass8', defauiltTheme: 'dark5' },
-		{ login: 'Crazy007', password: 'pass9', defauiltTheme: 'dark4' },
+		{ login: 'Crazy007', password: 'pass9', defauiltTheme: 'dark4off' },
 	] // База пользователей
 	// /////////////////////
 

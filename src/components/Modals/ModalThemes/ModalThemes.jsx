@@ -17,6 +17,7 @@ const ModalThemes = ({ visible, setVisible, theme, setTheme }) => {
 		{ value: 'dark2', name: 'Dark green v2' },
 		{ value: 'dark3', name: 'Dark white' },
 		{ value: 'dark4', name: 'Dark red' },
+		{ value: 'dark4off', name: 'Dark red no Effect' },
 		{ value: 'dark5', name: 'Dark noire' },
 		{ value: 'light1', name: 'Light SoulMary' },
 		{ value: 'light2', name: 'Light black' },

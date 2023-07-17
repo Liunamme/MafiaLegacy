@@ -14,10 +14,12 @@ const InfoBlock = ({ children, classes }) => {
 		'mainDiv',
 		classes && classes.allTrue ? style.width100 : '',
 		classes && classes.OFF ? style.lightOFF : '',
+		theme === 'dark4off' ? style.lightOFF : '',
 	].join(' ');
 
 	const rootClassNoise = [
 		style.noise,
+		theme === 'dark4off' ? style.displayNone : '',
 		classes && classes.OFF ? style.displayNone : '',
 	].join(' ');
 

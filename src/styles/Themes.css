@@ -23,7 +23,7 @@
   /* ТЁМНЫЕ */
 
   /* Общие стили тёмных тем */
-  .dark1, .dark2, .dark3, .dark4, .dark5 {
+  .dark1, .dark2, .dark3, .dark4, .dark4off, .dark5 {
 	--DefaultFont: 'RubikRegular'; /* Общий шрифт */
 	--FontColor: #ffffff; /* Общий цвет текста */
 	--BackgroundColor: #474B4F; /* Общий цвет заднего фона */
@@ -86,6 +86,17 @@
 	--InfoBlockColorHover: #aaaaaa;
 	--InfoBlockBackgroundColor: rgb(161, 39, 39); /* Цвет заднего фона информационного блока */
 	--InfoBlockBackgroundColorDisplay: rgba(161, 39, 39, 0.5);
+
+	--TableSecondColor: rgb(122, 29, 29); /* 2й цвет таблицы */
+
+	--SwitchBackgroundOFF: rgb(221, 67, 67);
+	--SwitchCircle: #ffffff;
+  }
+
+  .dark4off { /* Пиксельная тёмная зеленая тема */
+	--InfoBlockColor: #ffffff; /* Цвет текста информационного блока */
+	--InfoBlockColorHover: #aaaaaa;
+	--InfoBlockBackgroundColor: rgb(161, 39, 39); /* Цвет заднего фона информационного блока */
 
 	--TableSecondColor: rgb(122, 29, 29); /* 2й цвет таблицы */
 
