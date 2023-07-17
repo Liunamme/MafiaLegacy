@@ -2,14 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import './styles/App.css'
 import './styles/Themes.css'
-import AppRouter from './components/AppRouter';
-import { HashRouter as Router } from 'react-router-dom';
 import { StoreContext } from './context/context';
+import Autorization from './components/Autorization';
 /////////////////////////////////////////////////////
 
 const App = () => {
 	// Глобальные состояния 
-	const [password, setPassword] = useState('pass1') // Пароль от сайта
 	const [pageNow, setPageNow] = useState('/start') // Состояние нынешней страницы (на другие попасть невозможно)
 	const [isGameRolesChanged, setIsGameRolesChanged] = useState(false); // Состояние-блокировщик добавления дефолтных ролей/слотов в roleData/slotData (в RandomBlock), чтобы они не добавлялись при обновлении страницы, а только при изменении кол-ва игроков
 	const [roles, setRoles] = useState(
@@ -68,8 +66,7 @@ const App = () => {
 	return (
 		<StoreContext.Provider // Передача состояний отсюда по всем компонентам
 			value={{
-				password, setPassword, // Аутентификация
-				pageNow, setPageNow,
+				pageNow, setPageNow, // Текущая страница
 				gameParametres, setGameParametres, // Игровые параметры
 				player, setPlayer, // Игрок
 				roles, setRoles, // Роли
@@ -81,9 +78,7 @@ const App = () => {
 			}} // в value нужно добавлять состояния, которые ме хотим передать другим компонентам (для чистаемости: 1 строчка - 1 состояние и функция для управления им)
 		>
 			<div className={`App ${theme}`}>
-				<Router>
-					<AppRouter />
-				</Router>
+				<Autorization />
 			</div>
 		</StoreContext.Provider>
 	);

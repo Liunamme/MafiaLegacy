@@ -31,11 +31,9 @@ const ValuePlayers = ({ valuePlayers, setValuePlayers }) => {
 				...prevRoles.civilian,
 				value: valuePlayers >= 9 && valuePlayers <= 11
 					? 6
-					: valuePlayers >= 12 && valuePlayers <= 14
+					: valuePlayers >= 12 && valuePlayers <= 15
 						? 5
-						: valuePlayers === 15
-							? 4
-							: null
+						: null
 			}, // Условия кол-ва игроков для кол-ва роли Мирный
 			mafia: {
 				...prevRoles.mafia,
@@ -72,7 +70,7 @@ const ValuePlayers = ({ valuePlayers, setValuePlayers }) => {
 			}, // Условия кол-ва игроков для кол-ва роли Маньяк
 			werewolf: {
 				...prevRoles.werewolf,
-				value: valuePlayers >= 14 ? 1 : null
+				value: valuePlayers === 14 ? 1 : null
 			}, // Условия кол-ва игроков для кол-ва роли Оборотень
 			sergeant: {
 				...prevRoles.sergeant,

@@ -1,23 +1,23 @@
 // Импорты
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { privateRoutes, publicRoutes } from '../router/routes';
-import { StoreContext, AppRouterContext } from '../context/context';
+import { StoreContext, AppRouterContext, AutorizationContext } from '../context/context';
 /////////////////////////////////////////////////////
 
 const AppRouter = () => {
 	// Состояния
-	const { password, setPageNow } = useContext(StoreContext); // Получение состояний из глобального хранилища
-	const [isAuth, setIsAuth] = useState(null); // Состояние для того, чтобы переадресовывать на /login, если оно не совпадает с password
+	const { setPageNow } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { isAuth, setIsAuth } = useContext(AutorizationContext); // Получение состояния авторизации
 	/////////////////////////////////////////////////////
 
 	// Функционал
 	const navigate = useNavigate();
 	useEffect(() => {
-		const auth = localStorage.getItem('password');
-		const storedPageNow = localStorage.getItem('pageNow');
-		if (auth === password) {
-			setIsAuth(password);
+		const auth = JSON.parse(localStorage.getItem('Auth'));
+		const storedPageNow = localStorage.getItem('pageNow') ? localStorage.getItem('pageNow') : '/start';
+		if (auth) {
+			setIsAuth(true);
 			if (storedPageNow === '/start') {
 				setPageNow('/start');
 				navigate('/start');
@@ -31,7 +31,7 @@ const AppRouter = () => {
 		} else {
 			navigate('/login');
 		}
-	}, [navigate, password]); // Переадресовывает на нужную страницу, и на другие попасть невозможно
+	}, [navigate, isAuth]); // Переадресовывает на нужную страницу, и на другие попасть невозможно
 
 	const changePage = (link) => {
 		localStorage.setItem('pageNow', link);
@@ -48,7 +48,7 @@ const AppRouter = () => {
 			}} // в value нужно добавлять состояния, которые ме хотим передать другим компонентам (для чистаемости: 1 строчка - 1 состояние и функция для управления им)
 		>
 			<Routes>
-				{isAuth === password ? (
+				{isAuth ? (
 					<>
 						{privateRoutes.map(route => ( // Чтобы добавить новую страницу, которая не доступна без аунтефикации -  добавь её в routes.js privateRoutes
 							<Route

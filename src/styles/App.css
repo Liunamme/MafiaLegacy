@@ -189,6 +189,41 @@ button[disabled] {
 }
 
 
+.logoTheme {
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logoTheme img {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.vaultBoy {
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	right: 0px;
+	filter: brightness(0.65);
+}
+
+.user {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
 
 /* ................... */
 

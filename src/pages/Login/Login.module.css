@@ -3,20 +3,27 @@
 	justify-content: center;
 	flex-direction: column;
 	height: 100vh;
+	width: 100%;
+	align-items: center;
 }
 
 	.password form{ /* Стиль формы */
 		display: flex;
-		justify-content: center;
 		z-index: 4;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		width: 400px;
 	}
 
 
 		.btn, .inputPass{ /* Общий стиль input(поля для ввода) и кнопки */
 			height: 80px;
-			border: 3px solid rgba(141, 5, 5, 0.719);
-			font-family: 'Montserrat Alternates', sans-serif;
+			border: 3px solid rgba(141, 5, 5, 0.719) !important;
 			font-weight: 600;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		/* Кнопка */
@@ -24,34 +31,30 @@
 			font-size: 30px;
 			position: relative;
 			left: -3px;
-			width: 150px;
-			border-radius: 0px 20px 20px 0px;
-			background-color: rgba(141, 5, 5, 0.719);
-			color: #000000;
+			width: 100%;
+			background: rgba(141, 5, 5, 0.719) !important;
+			color: #000000 !important; 
 			cursor: pointer;
 		}
 
 		.btn:hover { /* Стиль кнопки при наведении на неё */
-			background-color: rgba(109, 4, 4, 0.719);
+			background: rgba(109, 4, 4, 0.719) !important;
 		}
 
 		/* input(поля для ввода) */
 		.inputPass{ /* Стиль input */
-			font-size: 50px;
-			width: 400px;
-			border-radius: 20px 0px 0px 20px;
-			padding-left: 20px;
-			padding-right: 15px;
-			color: rgb(141, 5, 5);
+			font-size: 30px;
+			width: 100%;
+			padding-left: 17.5px;
+			padding-right: 17.5px;
+			color: rgb(141, 5, 5) !important;
 			background: #0000009c;
-
 		}
 
 		.inputPass::placeholder{ /* Стиль плейсхолдера input(поля для ввода) */
 			position: relative;
-			top: -7px;
 			font-size: 30px;
-			color: rgba(141, 5, 5, 0.719);
+			color: rgba(141, 5, 5, 0.719) !important;
 		}
 
 		.inputPass:focus, .btn:focus{ /* Отключение дефолтной обводки браузера при фокусе инпута(поля для ввода) и кнопки */

@@ -54,6 +54,7 @@ const Game = () => {
 					</>
 				) : ''}
 			</span>
+			<span className='user'>{localStorage.getItem(`User`)}</span>
 			<ModalThemes visible={modalThemes} setVisible={setModalThemes} theme={theme} setTheme={setTheme} /> {/* Модалка с выбором темы */}
 			<ControlPanel /> {/* Панель управления */}
 			<AdditionalUnit /> {/* Дополнительный блок */}
