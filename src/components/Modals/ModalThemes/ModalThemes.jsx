@@ -8,9 +8,8 @@ import { AutorizationContext } from '../../../context/context';
 
 
 const ModalThemes = ({ visible, setVisible, theme, setTheme }) => {
-	const { isAuth } = useContext(AutorizationContext); // Состояние авторизации
+	const { isAuth, dataUsers } = useContext(AutorizationContext); // Состояние авторизации
 	const [defaultTheme, setDefaultTheme] = useState(null) // Состояние дефолтной темы
-
 	const themes = [
 		{ value: `${defaultTheme}`, name: 'По умолчанию' },
 		{ value: 'dark1', name: 'Dark green v1' },
@@ -25,11 +24,24 @@ const ModalThemes = ({ visible, setVisible, theme, setTheme }) => {
 		{ value: 'personal2', name: 'Fallout NV by RBZ' },
 	] // Сюда добавлять новые темы. value - название в Themes.css; name - название в select.
 
+	const thisUser = localStorage.getItem('User')
+	const user = dataUsers.find(item => item.login === thisUser);
+
+
+
 	useEffect(() => {
-		console.log('rabotaet');
+		if (user.login === thisUser) {
+			localStorage.setItem('defaultTheme', user.defaultTheme);
+		} else {
+			console.log('Пользователь не найден');
+		}
+	}, []) // Установка дефолтной темы пользователя
+
+
+	useEffect(() => {
 		setDefaultTheme(localStorage.getItem('defaultTheme'))
 		setTheme(localStorage.getItem('theme'));
-	}, [isAuth]) // Установка дефолтной темы пользователя
+	}, [isAuth]) // Первоначальная установка дефолтной темы пользователя
 
 
 	const handleThemeChange = (event) => {
