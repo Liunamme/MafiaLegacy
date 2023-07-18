@@ -16,7 +16,7 @@ const Autorization = () => {
 		{ login: 'SoulMary', password: 'pass2', defaultTheme: 'light1' },
 		{ login: 'VEY', password: 'blooda0mee', defaultTheme: 'dark4off' },
 		{ login: 'Rbz', password: 'pass4', defaultTheme: 'personal2' },
-		{ login: 'Commuraptor', password: 'pass5', defaultTheme: 'light1' },
+		{ login: 'Commuraptor', password: 'pAss.SwordArtOnline', defaultTheme: 'light1' },
 		{ login: 'Ingrand', password: 'pass6', defaultTheme: 'dark5' },
 		{ login: 'Lega', password: 'pass7', defaultTheme: 'dark5' },
 		{ login: 'Passiflora', password: 'pass8', defaultTheme: 'dark5' },
