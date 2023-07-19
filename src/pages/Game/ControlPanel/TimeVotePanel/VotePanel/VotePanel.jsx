@@ -47,7 +47,7 @@ const VotePanel = () => {
 										animate={{ opacity: 1, y: '0%' }}
 										exit={{ opacity: 0, y: '100%' }}
 										transition={{ duration: 0.5 }}
-										className={`${style.circle} ${theme} voteCircle`}
+										className={`${style.number} ${theme} voteNumber`}
 									>
 										{`${item.id < 10 ? '0' + item.id : item.id}`}
 									</motion.div>

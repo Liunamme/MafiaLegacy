@@ -1,8 +1,8 @@
 // Импорты
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import style from './Parametres.module.css';
 import Block from '../../../components/UI/Block/Block';
-import { StoreContext, AppRouterContext } from '../../../context/context';
+import { StoreContext, AppRouterContext, AutorizationContext } from '../../../context/context';
 import ValuePlayers from './ValuePlayers/ValuePlayers';
 import SwitchParametres from './SwitchParametres/SwitchParametres';
 import ThemesBtn from '../../../components/Modals/ModalThemes/ThemesBtn/ThemesBtn';
@@ -10,7 +10,8 @@ import ThemesBtn from '../../../components/Modals/ModalThemes/ThemesBtn/ThemesBt
 
 const Parametres = () => {
 	// Состояния
-	const { gameParametres, theme } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { gameParametres, theme, startGame } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { isAuth } = useContext(AutorizationContext); // Получение состояний из авторизации
 	const { changePage } = useContext(AppRouterContext); // Получение состояний из AppRouter
 	const [valuePlayers, setValuePlayers] = useState(parseInt(localStorage.getItem('valuePlayers')) || '#'); // Состояние кол-ва игроков
 	// /////////////////////////////////////////////////////////
@@ -33,6 +34,12 @@ const Parametres = () => {
 		}
 	} // Запуск игры и условия для запуска, сохранение итоговых настроек игры, и очистка localStorage от старых значений, чтобы при перезапуске был выбор с самого начала
 
+	// Функционал
+	useEffect(() => {
+		if (startGame === false && isAuth) {
+			localStorage.setItem('gameParametresDefault', JSON.stringify(gameParametres));
+		}
+	}, [isAuth]) // Сохранение дефолтного шаблона gameParametres, для начала новой игры без перезагрузки страницы (чтобы данные обнулялись полностью и подтягивались новые параметры без перезагрузки в случае обновления)
 	///////////////////////////////////////
 
 	// Отрисовка компонентов

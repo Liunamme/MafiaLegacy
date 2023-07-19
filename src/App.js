@@ -1,9 +1,11 @@
 // Импорты
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './styles/App.css'
 import './styles/Themes.css'
 import { StoreContext } from './context/context';
 import Autorization from './components/Autorization';
+import { Helmet } from 'react-helmet';
+import IconSite from './media/img/ico/iconSite.png';
 /////////////////////////////////////////////////////
 
 const App = () => {
@@ -52,15 +54,8 @@ const App = () => {
 	const [startGame, setStartGame] = useState(JSON.parse(localStorage.getItem('startGame')) || false) // Состояние начатой игры
 	const [modalThemes, setModalThemes] = useState(false) // Модальное окно с Темами
 	const [theme, setTheme] = useState(localStorage.getItem('theme') || 'default') // Состояние темы
+	const [offEffects, setOffEffects] = useState(JSON.parse(localStorage.getItem('offEfects')) || false); // Состояние отключения эффектов
 	// /////////////////////////////////////////////////////////
-
-	// Функционал
-	useEffect(() => {
-		if (startGame === false) {
-			localStorage.setItem('gameParametresDefault', JSON.stringify(gameParametres));
-		}
-	}, []) // Сохранение дефолтного шаблона gameParametres, для начала новой игры без перезагрузки страницы (чтобы данные обнулялись полностью и подтягивались новые параметры без перезагрузки в случае обновления)
-	///////////////////////////////////////
 
 	// Отрисовка компонентов
 	return (
@@ -75,9 +70,13 @@ const App = () => {
 				startGame, setStartGame, // Начата игра
 				modalThemes, setModalThemes, // Модальное окно с Темами
 				theme, setTheme, // Тема
+				offEffects, setOffEffects, // Откл эффектов
 			}} // в value нужно добавлять состояния, которые ме хотим передать другим компонентам (для чистаемости: 1 строчка - 1 состояние и функция для управления им)
 		>
 			<div className={`App ${theme}`}>
+				<Helmet>
+					<link rel="icon" type="image/png" href={IconSite} />
+				</Helmet>
 				<Autorization />
 			</div>
 		</StoreContext.Provider>

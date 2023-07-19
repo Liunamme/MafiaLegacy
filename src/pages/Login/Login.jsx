@@ -1,5 +1,5 @@
 // Импорты
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import style from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
 import { AutorizationContext } from '../../context/context';
@@ -41,8 +41,8 @@ const Login = () => {
 			// Если логин с паролем верные
 			localStorage.setItem('Auth', 'true');
 			localStorage.setItem('User', user.login);
-			localStorage.setItem('theme', user.defauiltTheme);
-			localStorage.setItem('defaultTheme', user.defauiltTheme);
+			localStorage.setItem('defaultTheme', user.defaultTheme);
+			localStorage.setItem('theme', user.defaultTheme);
 			navigate('/');
 		} else { // Если логин верный, а пароль нет
 			if (login) {

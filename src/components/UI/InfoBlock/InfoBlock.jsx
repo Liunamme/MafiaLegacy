@@ -6,7 +6,7 @@ import style from './InfoBlock.module.css';
 
 
 const InfoBlock = ({ children, classes }) => {
-	const { theme } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { theme, offEffects } = useContext(StoreContext); // Получение состояний из глобального хранилища
 
 	const rootClassMainDiv = [
 		style.mainDiv,
@@ -14,12 +14,12 @@ const InfoBlock = ({ children, classes }) => {
 		'mainDiv',
 		classes && classes.allTrue ? style.width100 : '',
 		classes && classes.OFF ? style.lightOFF : '',
-		theme === 'dark4off' ? style.lightOFF : '',
+		offEffects ? style.lightOFF : '',
 	].join(' ');
 
 	const rootClassNoise = [
 		style.noise,
-		theme === 'dark4off' ? style.displayNone : '',
+		offEffects ? style.displayNone : '',
 		classes && classes.OFF ? style.displayNone : '',
 	].join(' ');
 
