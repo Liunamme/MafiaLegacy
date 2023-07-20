@@ -5,6 +5,7 @@ import { StoreContext } from '../../context/context';
 import RandomBlock from './Random/RandomBlock';
 import Parametres from './Parametres/Parametres';
 import ModalThemes from '../../components/Modals/ModalThemes/ModalThemes';
+import User from '../../components/User';
 /////////////////////////////////////////////////////
 
 const Start = () => {
@@ -12,7 +13,7 @@ const Start = () => {
 	// Отрисовка компонентов
 	return (
 		<div className={`${style.start} page`}>
-			<span className='user'>{localStorage.getItem(`User`)}</span>
+			<User />
 			<ModalThemes visible={modalThemes} setVisible={setModalThemes} theme={theme} setTheme={setTheme} /> {/* Модалка с выбором темы */}
 			<RandomBlock /> {/* Рандомайзер */}
 			<Parametres /> {/* Настройка параметров игры */}

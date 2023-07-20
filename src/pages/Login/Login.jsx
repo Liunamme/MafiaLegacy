@@ -1,5 +1,5 @@
 // Импорты
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import style from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
 import { AutorizationContext } from '../../context/context';

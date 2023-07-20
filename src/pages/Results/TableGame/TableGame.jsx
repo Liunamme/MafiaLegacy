@@ -12,9 +12,7 @@ const TableGame = () => {
 		thead: {
 			id: { className: 'idPlayer', content: '#' },
 			role: { className: 'rolePlayer', content: 'Роль' },
-			...(gameParametres.fallsMax
-				? { falls: { className: 'style.fallsPlayer', content: 'Фолы' } }
-				: {}),
+			falls: { className: 'style.fallsPlayer', content: 'Фолы' },
 			...(gameParametres.plus30
 				? { plus30: { className: 'style.plus30Player', content: '+30' } }
 				: {}),
@@ -37,9 +35,7 @@ const TableGame = () => {
 					</span>
 				),
 			},
-			...(gameParametres.fallsMax
-				? { falls: { content: gameParametres.fallsMax ? `${item.falls ? item.falls : '0'}` : '' } }
-				: {}),
+			falls: { content: `${item.falls ? item.falls : '0'}` },
 			...(gameParametres.plus30
 				? { plus30: { content: gameParametres.plus30 ? `${item.plus30 ? '+' : '-'}` : '' } }
 				: {}),

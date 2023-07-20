@@ -1,15 +1,14 @@
 // Импорты
 import React, { useState, useEffect, useContext } from 'react';
-import style from './SwitchParametres.module.css';
-import Switch3 from '../../../../components/UI/CustomSwitch/Switch3/Switch3'
 import Switch2 from '../../../../components/UI/CustomSwitch/Switch2/Switch2';
 import { StoreContext } from '../../../../context/context';
+import Switch2ON from '../../../../components/UI/CustomSwitch/Switch2ON/Switch2ON';
 /////////////////////////////////////////////////////
 
 const SwitchParametres = () => {
 	// Состояния
 	const { setGameParametres } = useContext(StoreContext); // Получение состояний из глобального хранилища
-	const [fallsMax, setFallsMax] = useState(parseInt(localStorage.getItem('fallsMax')) || null); // Состояние указанного максимального кол-ва фоллов
+	const [fallsMax, setFallsMax] = useState(parseInt(localStorage.getItem('fallsMax')) || 4); // Состояние указанного максимального кол-ва фоллов
 	const [plus30, setPlus30] = useState(JSON.parse(localStorage.getItem('plus30')) || false); // Состояние будет ли использоваться plus30
 	const [badWords, setBadWords] = useState(JSON.parse(localStorage.getItem('badWords')) || false); // Состояние запрещена ли ненормативная лексика
 	// /////////////////////////////////////////////////////////
@@ -38,7 +37,7 @@ const SwitchParametres = () => {
 		<>
 			<div className='parametr'>
 				<div>КОЛ-ВО ФОЛОВ:</div>
-				<Switch3 value={[4, null, 5]} state={fallsMax} changeState={setFallsMax} />
+				<Switch2ON value={[4, 5]} state={fallsMax} changeState={setFallsMax} />
 			</div> {/* Кол-во фолов */}
 			<div className='parametr'>
 				<div>+30 СЕКУНД:</div>

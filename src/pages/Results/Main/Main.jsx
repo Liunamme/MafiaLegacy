@@ -16,7 +16,7 @@ const Main = () => {
 	const [isRunning, setIsRunning] = useState(false);
 	const newGameClick = (link) => {
 		setGameParametres((JSON.parse(localStorage.getItem('gameParametresDefault'))))
-		localStorage.removeItem('gameParametres');
+		localStorage.removeItem('gameParametres'); // Удаление параметров игры из localStorage
 		localStorage.removeItem('timer'); // Удаление локального таймера из localStorage
 		changePage(link)
 	}

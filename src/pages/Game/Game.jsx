@@ -7,6 +7,7 @@ import AdditionalUnit from './AdditionalUnit/AdditionalUnit';
 import ModalThemes from '../../components/Modals/ModalThemes/ModalThemes';
 import VaultBoy from '../../media/img/ico/vaultBoy.png';
 import sound from '../../media/sound/falloutJazz.mp3'
+import User from '../../components/User';
 /////////////////////////////////////////////////////
 
 const Game = () => {
@@ -54,7 +55,7 @@ const Game = () => {
 					</>
 				) : ''}
 			</span>
-			<span className='user'>{localStorage.getItem(`User`)}</span>
+			<User />
 			<ModalThemes visible={modalThemes} setVisible={setModalThemes} theme={theme} setTheme={setTheme} /> {/* Модалка с выбором темы */}
 			<ControlPanel /> {/* Панель управления */}
 			<AdditionalUnit /> {/* Дополнительный блок */}

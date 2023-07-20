@@ -18,8 +18,7 @@ const KickInfo = ({ gameParametres }) => {
 					<span>● Метаинфу</span>
 					<span>● Оскорбление ведущего/игроков</span>
 					<span>● Спор с ведущим</span>
-					{gameParametres.badWords && !gameParametres.fallsMax ? <span>● Мат</span> : ''}
-					{gameParametres.fallsMax && <span>● {gameParametres.fallsMax} фолл</span>}
+					<span>● {gameParametres.fallsMax} фолл</span>
 				</div>
 			</InfoBlock>
 		</div>
