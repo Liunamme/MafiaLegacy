@@ -13,6 +13,11 @@
 	font-family: 'Fallout';
 	src: url('../fotns/Fallout/galiver-sans-obliques.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'Noto Emoji';
+	src: url('../fotns/NotoEmoji/NotoEmoji-Regular.ttf') format('truetype');
+}
 /* //////////// */
   :root {
 	--DefaultFont: 'RubikRegular'; /* Общий шрифт */
@@ -441,5 +446,9 @@ filter: brightness(1.3);
 background:  var(--InfoBlockBackgroundColorDisplay);
 filter: brightness(1.2);
 transition: background 1s ease-in-out;
+}
+
+.smile {
+	font-family: 'Noto Emoji', sans-serif;
 }
 /* //////////////////////// */

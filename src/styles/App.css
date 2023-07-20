@@ -145,10 +145,6 @@ button[disabled] {
 	transform: translateX(-20%) translateY(-20%);
 }
 
-.smile {
-	font-family: 'Noto Emoji', sans-serif;
-}
-
 .roleSpan {
 	display: flex;
 	gap: 5px;
