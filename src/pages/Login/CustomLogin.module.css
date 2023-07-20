@@ -1,3 +1,16 @@
+/* ИМПОРТЫ */
+@font-face {
+	font-family: 'Holtwood One SC';
+	src: url('../../fotns/HoltWoodOneSC/HoltwoodOneSC-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../../fotns/MontserratAlternates/MontserratAlternates-Regular.ttf') format('truetype');
+  }
+
+/* //////////// */
+
 .login { /* Общий стиль блока login (включает в себя видеофон(video), блок с затемнением заднего фона (glass), заголовки (h1,h2,h3)) */
 	position: relative;
 	display: flex;
