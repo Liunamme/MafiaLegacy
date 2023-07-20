@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MafiaLegacy/static/css/main.d7b798cd.css",
+    "main.css": "/MafiaLegacy/static/css/main.e3f3929a.css",
     "main.js": "/MafiaLegacy/static/js/main.55114582.js",
     "static/media/falloutJazz.mp3": "/MafiaLegacy/static/media/falloutJazz.053d938fe8304ca6b82e.mp3",
     "static/media/pipboyPanel.svg": "/MafiaLegacy/static/media/pipboyPanel.0dec91a18e074248a9f3.svg",
@@ -8,16 +8,18 @@
     "static/media/EpilepsySans.ttf": "/MafiaLegacy/static/media/EpilepsySans.88a54509a9c5bfc72e7d.ttf",
     "static/media/galiver-sans-obliques.ttf": "/MafiaLegacy/static/media/galiver-sans-obliques.ff5c65f96a2020557a4d.ttf",
     "static/media/RubikRegular.ttf": "/MafiaLegacy/static/media/RubikRegular.55fa11cdc8b9a3ee842f.ttf",
+    "static/media/MontserratAlternates-Regular.ttf": "/MafiaLegacy/static/media/MontserratAlternates-Regular.17043267bfe178ef8921.ttf",
     "static/media/vaultboyGreen.svg": "/MafiaLegacy/static/media/vaultboyGreen.fb19906abe55012c44aaa9b60e4d732f.svg",
     "static/media/vaultboyOrange.svg": "/MafiaLegacy/static/media/vaultboyOrange.aa3000d2173bc0697e873aba2c3aec66.svg",
     "static/media/vaultBoy.png": "/MafiaLegacy/static/media/vaultBoy.3524e2f5871363209c21.png",
+    "static/media/HoltwoodOneSC-Regular.ttf": "/MafiaLegacy/static/media/HoltwoodOneSC-Regular.7ee7f2d0f13e4770accd.ttf",
     "static/media/timerSignal.mp3": "/MafiaLegacy/static/media/timerSignal.73ce06c838fecb2f3907.mp3",
     "index.html": "/MafiaLegacy/index.html",
-    "main.d7b798cd.css.map": "/MafiaLegacy/static/css/main.d7b798cd.css.map",
+    "main.e3f3929a.css.map": "/MafiaLegacy/static/css/main.e3f3929a.css.map",
     "main.55114582.js.map": "/MafiaLegacy/static/js/main.55114582.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7b798cd.css",
+    "static/css/main.e3f3929a.css",
     "static/js/main.55114582.js"
   ]
 }
