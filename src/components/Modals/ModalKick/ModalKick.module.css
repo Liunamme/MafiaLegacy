@@ -29,3 +29,21 @@ h1 {
 	display: flex;
 	gap: 20px;
 }
+
+@media (max-width: 890px) {
+	
+	.btn {
+		width: 120px;
+		height: 50px;
+	}
+	
+	.kickBtns {
+		gap: 10px;
+	}
+}
+
+@media (max-height: 840px) {
+
+	
+	
+}

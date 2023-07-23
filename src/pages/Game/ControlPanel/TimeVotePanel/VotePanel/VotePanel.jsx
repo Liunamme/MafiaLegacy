@@ -8,7 +8,7 @@ import InfoBlock from '../../../../../components/UI/InfoBlock/InfoBlock';
 
 const VotePanel = () => {
 	// Состояния
-	const { gameParametres, setGameParametres, theme } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { gameParametres, setGameParametres, theme, bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
 	// /////////////////////////////////////////////////////////
 
 	// Функционал
@@ -49,7 +49,7 @@ const VotePanel = () => {
 										transition={{ duration: 0.5 }}
 										className={`${style.number} ${theme} voteNumber`}
 									>
-										{`${item.id < 10 ? '0' + item.id : item.id}`}
+										{bot ? item.id : `${item.id < 10 ? '0' + item.id : item.id}`}
 									</motion.div>
 								))}
 						</AnimatePresence>

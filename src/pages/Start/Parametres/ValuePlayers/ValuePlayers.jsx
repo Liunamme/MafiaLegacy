@@ -124,6 +124,7 @@ const ValuePlayers = ({ valuePlayers, setValuePlayers }) => {
 		})); // добавление roles в gameParametres.roles
 	}, [valuePlayers, roles]); // Установка/Обновление дефолтных ролей (прямое добавление ролей в массив) / Добавление roles в gameParametres.roles
 
+
 	const handleSelectChange = (event) => {
 		const selectedValue = event.target.value;
 		setValuePlayers(parseInt(selectedValue));

@@ -61,3 +61,35 @@
 		font-weight: 600;
 	} /* Выставленный игрок*/
 }
+
+@media (max-width: 890px) {
+
+	.voted {
+		gap: 0px;
+
+	} /* Выставленные игроки*/
+	
+	.number {
+		width: 2rem;
+		height: 2rem;
+		border: 0;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5rem;
+		font-weight: 600;
+	} /* Выставленный игрок*/
+
+	.panel h1 {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-height: 840px) {
+
+	.panel h1 {
+		margin-bottom: 0px;
+	}
+	
+}

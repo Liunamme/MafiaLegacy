@@ -10,15 +10,15 @@ import ThemesBtn from '../../../components/Modals/ModalThemes/ThemesBtn/ThemesBt
 
 const Parametres = () => {
 	// Состояния
-	const { gameParametres, theme, startGame } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { gameParametres, theme, startGame, bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
 	const { isAuth } = useContext(AutorizationContext); // Получение состояний из авторизации
 	const { changePage } = useContext(AppRouterContext); // Получение состояний из AppRouter
-	const [valuePlayers, setValuePlayers] = useState(parseInt(localStorage.getItem('valuePlayers')) || '#'); // Состояние кол-ва игроков
+	const [valuePlayers, setValuePlayers] = useState(parseInt(localStorage.getItem('valuePlayers')) || gameParametres.valuePlayers || '#'); // Состояние кол-ва игроков
 	// /////////////////////////////////////////////////////////
 	// Функционал
 
 	const startGameClick = (link) => {
-		if (valuePlayers !== '#') {
+		if (gameParametres.valuePlayers || valuePlayers !== '#') {
 			localStorage.setItem('startGame', JSON.stringify(true)); // Сохранение параметров игры в localStorage
 			localStorage.setItem('gameParametres', JSON.stringify(gameParametres)); // Сохранение параметров игры в localStorage
 			localStorage.removeItem('valuePlayers');
@@ -41,6 +41,19 @@ const Parametres = () => {
 		}
 	}, [isAuth]) // Сохранение дефолтного шаблона gameParametres, для начала новой игры без перезагрузки страницы (чтобы данные обнулялись полностью и подтягивались новые параметры без перезагрузки в случае обновления)
 	///////////////////////////////////////
+	useEffect(() => {
+		console.log(gameParametres);
+		console.log(valuePlayers);
+	}, [gameParametres])
+
+	useEffect(() => {
+		console.log(bot);
+		if (bot) {
+			setValuePlayers('#')
+		}
+	}, [bot])
+
+
 
 	// Отрисовка компонентов
 	return (
@@ -53,8 +66,8 @@ const Parametres = () => {
 				/> {/* Header в виде input чтобы выглядеть  так-же как и в рандоманзере, + потенциал для дальнейших обновлений (например на стадии идеи 'Настройка ролей' для добавления кастомных ролей)*/}
 				<div className='content'>
 					<div className={style.parametresSection}>
-						<ValuePlayers valuePlayers={valuePlayers} setValuePlayers={setValuePlayers} />
 						<SwitchParametres />
+						{!bot && <ValuePlayers valuePlayers={valuePlayers} setValuePlayers={setValuePlayers} />}
 					</div> {/* Сюда можно добавлять новые параметры */}
 					<ThemesBtn /> {/* Кнопка темы открывающая модальное окно с темами */}
 				</div>

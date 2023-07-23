@@ -343,6 +343,16 @@ button, .btn {
 	transition: var(--TransitionDefault);
 }
 
+textarea {
+	background: transparent;
+	color: var(--BtnColor);
+	transition: var(--TransitionDefault);
+}
+
+textarea::placeholder {
+	color: var(--BtnColor);
+}
+
 button:hover, .btn:hover {
 	background: var(--BtnBackgroundColorHover);
 }

@@ -41,9 +41,11 @@ const App = () => {
 		winner: null, // Победитель в Игре (Используется после завершения игры для подведения итогов)
 		time: 0, // Длительность игры (Используется после завершения игры для подведения итогов)
 		date: null, // Дата игры (Для истории игр)
+		bot: false
 	}) // Параметры игры. можно мере масштабирования приложения добавлять новые параметры. 
 	const [player, setPlayer] = useState({
 		id: 1, // ID игрока
+		nickname: '',
 		role: '', // Роль игрока
 		vote: false, // Выставлен ли игрок на голосование (true - выставлен / false - не выставлен)
 		kick: false, // Выбыл ли игрок из игры, будь то: 1) Кик на дневном голосовании / 2) Убийство ночью / 3) Поднятие по фоллам
@@ -55,8 +57,8 @@ const App = () => {
 	const [modalThemes, setModalThemes] = useState(false) // Модальное окно с Темами
 	const [theme, setTheme] = useState(localStorage.getItem('theme') || 'default') // Состояние темы
 	const [offEffects, setOffEffects] = useState(JSON.parse(localStorage.getItem('offEfects')) || false); // Состояние отключения эффектов
+	const [bot, setBot] = useState(JSON.parse(localStorage.getItem('bot')) || false); // Состояние запрещена ли ненормативная лексика
 	// /////////////////////////////////////////////////////////
-
 	// Отрисовка компонентов
 	return (
 		<StoreContext.Provider // Передача состояний отсюда по всем компонентам
@@ -71,6 +73,7 @@ const App = () => {
 				modalThemes, setModalThemes, // Модальное окно с Темами
 				theme, setTheme, // Тема
 				offEffects, setOffEffects, // Откл эффектов
+				bot, setBot, // Игра с ботом / без бота
 			}} // в value нужно добавлять состояния, которые ме хотим передать другим компонентам (для чистаемости: 1 строчка - 1 состояние и функция для управления им)
 		>
 			<div className={`App ${theme}`}>

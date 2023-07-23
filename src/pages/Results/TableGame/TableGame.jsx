@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import style from './TableGame.module.css'
 import Block from '../../../components/UI/Block/Block';
 import InfoBlock from '../../../components/UI/InfoBlock/InfoBlock';
 import Table from '../../../components/Table/Table'
+import { StoreContext } from '../../../context/context';
 
 const TableGame = () => {
+	const { bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
 	const gameParametres = JSON.parse(localStorage.getItem('gameParametres'))
 	const date = gameParametres.date
 
 	const tableData = {
 		thead: {
-			id: { className: 'idPlayer', content: '#' },
+			id: { className: 'idPlayer', content: bot ? 'Игрок' : '#' },
 			role: { className: 'rolePlayer', content: 'Роль' },
 			falls: { className: 'style.fallsPlayer', content: 'Фолы' },
 			...(gameParametres.plus30
@@ -20,7 +22,8 @@ const TableGame = () => {
 		},
 		tbody: gameParametres.players.map((item, index) => ({
 			id: {
-				content: item.id < 10 ? `0${item.id}` : item.id,
+				content: bot ? `${item.id} ${item.nickname}` : item.id < 10 ? '0' + item.id : item.id,
+
 			},
 			role: {
 				content: (

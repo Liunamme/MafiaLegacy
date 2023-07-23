@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import style from './HistoryGame.module.css'
 import Block from '../../../components/UI/Block/Block';
 import Time from './Time/Time';
 import InfoBlock from '../../../components/UI/InfoBlock/InfoBlock';
 import Table from '../../../components/Table/Table';
-
+import { StoreContext } from '../../../context/context';
 
 const HistoryGame = () => {
 	const gameParametres = JSON.parse(localStorage.getItem('gameParametres'))
 	const time = gameParametres.time
+	const { bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
 
 	const tableData = {
 		thead: {
-			id: { className: 'idPlayer', content: '#' },
+			id: { className: 'idPlayer', content: bot ? 'Игрок' : '#' },
 			role: { className: 'rolePlayer', content: 'Роль' },
 			time: { className: 'timePlayer', content: 'Время' },
 			cause: { className: 'style.causePlayer', content: 'Причина' },
 		},
 		tbody: gameParametres.kicked.map((item, index) => ({
 			id: {
-				content: item.id < 10 ? `0${item.id}` : item.id,
+				content: bot ? `${item.id} ${item.nickname}` : item.id < 10 ? '0' + item.id : item.id,
 			},
 			role: {
 				content: (

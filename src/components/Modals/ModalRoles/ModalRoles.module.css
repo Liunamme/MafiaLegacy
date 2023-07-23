@@ -5,6 +5,11 @@
 	flex-direction: column;
 	gap: 20px;
 	font-size: 20px;
+	overflow: auto;
+}
+
+.modalRoles::-webkit-scrollbar {
+	display: none;
 }
 
 .modalRoles .role{

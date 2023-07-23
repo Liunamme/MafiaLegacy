@@ -76,7 +76,24 @@ button[disabled] {
 	right: 20px;
 	z-index: 3;
 } /* Кнопки дисплея с абсолютным позиционированием*/
+@media (max-width: 890px)  {
 
+	.infoBlock .absoluteBtn {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 5px;
+		right: 5px;
+	} /* Кнопки дисплея с абсолютным позиционированием*/
+}
+
+@media (max-height: 840px) {
+	.infoBlock .absoluteBtn {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 5px;
+		right: 5px;
+	} /* Кнопки дисплея с абсолютным позиционированием*/
+}
 
 /* /////////////////// */
 
@@ -161,7 +178,11 @@ button[disabled] {
 
 /* ТАБЛИЦА */
 .tableResult .idPlayer {
-	width: 50px;
+	width: 50px;	
+	display: flex;
+	justify-content: start;
+	padding: 0px 0px 0px 20px;
+	font-size: 1.2rem;
 }
 
 .tableResult .characteristicsPlayer {

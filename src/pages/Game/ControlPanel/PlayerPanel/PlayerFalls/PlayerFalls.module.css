@@ -2,6 +2,7 @@
 /* Кнопки фоллов */
 .playerFalls {
 	border-radius: 10px;
+	display: flex;
 }
 
 .btn {

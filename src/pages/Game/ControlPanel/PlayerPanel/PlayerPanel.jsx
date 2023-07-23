@@ -15,9 +15,10 @@ const PlayerPanel = () => {
 	const [modalKick, setModalKick] = useState(false) // Переключатель модального окна с киком
 	const [selectedPlayer, setSelectedPlayer] = useState(null); // Хранение выбранного игрока для модального окна
 	// /////////////////////////////////////////////////////////
-
 	// Функционал
-
+	useEffect(() => {
+		console.log(gameParametres);
+	}, [gameParametres])
 	const playerClick = (item, type, i = null) => {
 		setGameParametres((prevParametres) => {
 			const updatedPlayers = prevParametres.players.map((player) => {
@@ -115,18 +116,30 @@ const PlayerPanel = () => {
 					item={selectedPlayer} // Передайте выбранного игрока в ModalKick
 				/>
 			)}
-			{gameParametres.players.map((item, index) => (
-				<div key={index} className={style.player}>
-					<PlayerVote item={item} playerClick={playerClick} />
-					{gameParametres.fallsMax === 4 || gameParametres.fallsMax === 5 ? (
-						<PlayerFalls item={item} playerClick={playerClick} gameParametres={gameParametres} />
-					) : null}
-					{gameParametres.plus30 && (
-						<PlayerPlus30 item={item} playerClick={playerClick} />
-					)}
-					<PlayerKick item={item} playerKick={playerKick} />
+			<div className={style.player}>
+				<div className={style.playersVote}>
+					{gameParametres.players.map((item, index) => (
+						<div key={index} className={style.playerVote}>
+							<PlayerVote item={item} playerClick={playerClick} />
+						</div>
+					))}
 				</div>
-			))}
+				<div className={style.playersCharacteristics}>
+					{gameParametres.players.map((item, index) => (
+						<div key={index} className={style.playerCharacteristics}>
+							{gameParametres.fallsMax === 4 || gameParametres.fallsMax === 5 ? (
+								<PlayerFalls item={item} playerClick={playerClick} gameParametres={gameParametres} />
+							) : null}
+							{gameParametres.plus30 && (
+								<PlayerPlus30 item={item} playerClick={playerClick} />
+							)}
+							<PlayerKick item={item} playerKick={playerKick} />
+						</div>
+					))}
+				</div>
+
+			</div>
+
 		</div>
 	);
 	// /////////////////////////////////////

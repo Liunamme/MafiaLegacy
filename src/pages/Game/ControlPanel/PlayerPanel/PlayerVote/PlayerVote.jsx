@@ -5,7 +5,7 @@ import { StoreContext } from '../../../../../context/context';
 /////////////////////////////////////////////////////
 
 const PlayerVote = ({ item, playerClick }) => {
-	const { theme } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { theme, bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
 
 	// Отрисовка компонентов
 	return (
@@ -15,7 +15,7 @@ const PlayerVote = ({ item, playerClick }) => {
 				disabled={item.kick}
 				onClick={() => playerClick(item, 'vote')}
 			>
-				{`${item.id < 10 ? '0' + item.id : item.id}`}
+				{bot ? `${item.id} ${item.nickname}` : item.id < 10 ? '0' + item.id : item.id}
 			</button>
 		</div>
 	);

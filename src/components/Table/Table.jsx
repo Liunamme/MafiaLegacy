@@ -3,12 +3,12 @@ import style from './Table.module.css'
 import { StoreContext } from '../../context/context';
 
 const Table = ({ data }) => {
-	const { theme } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const { theme, bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
 	return (
 		<table className={`${style.table} tableResult`}>
 			<thead>
 				<tr className={`${style.headerTable} ${style.tableRow}`}>
-					<th className={`${data.thead.id.className} ${style.tableColumn}`}>
+					<th className={`${data.thead.id.className} ${style.tableColumn}`} style={bot ? { width: '170px' } : {}}>
 						{data.thead.id.content}
 					</th>
 					<th className='characteristicsPlayer'>
@@ -47,7 +47,7 @@ const Table = ({ data }) => {
 			<tbody>
 				{data.tbody.map((item, index) => (
 					<tr key={index} className={`${style.tableRow} ${theme} tableRow`}>
-						<td className={`${data.thead.id.className} ${style.tableColumn}`}>
+						<td className={`${data.thead.id.className} ${style.tableColumn}`} style={bot ? { width: '170px' } : {}}>
 							{item.id.content}
 						</td>
 						<td className='characteristicsPlayer'>
