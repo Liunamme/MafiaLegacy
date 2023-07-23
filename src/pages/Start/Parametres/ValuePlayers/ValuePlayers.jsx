@@ -133,9 +133,6 @@ const ValuePlayers = ({ valuePlayers, setValuePlayers }) => {
 
 	// /////////////////////////////////
 
-
-	console.log();
-
 	// Отрисовка компонентов
 	return (
 		<div className='parametr'>

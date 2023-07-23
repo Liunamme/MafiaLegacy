@@ -16,9 +16,6 @@ const PlayerPanel = () => {
 	const [selectedPlayer, setSelectedPlayer] = useState(null); // Хранение выбранного игрока для модального окна
 	// /////////////////////////////////////////////////////////
 	// Функционал
-	useEffect(() => {
-		console.log(gameParametres);
-	}, [gameParametres])
 	const playerClick = (item, type, i = null) => {
 		setGameParametres((prevParametres) => {
 			const updatedPlayers = prevParametres.players.map((player) => {

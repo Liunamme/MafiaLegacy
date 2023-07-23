@@ -41,13 +41,8 @@ const Parametres = () => {
 		}
 	}, [isAuth]) // Сохранение дефолтного шаблона gameParametres, для начала новой игры без перезагрузки страницы (чтобы данные обнулялись полностью и подтягивались новые параметры без перезагрузки в случае обновления)
 	///////////////////////////////////////
-	useEffect(() => {
-		console.log(gameParametres);
-		console.log(valuePlayers);
-	}, [gameParametres])
 
 	useEffect(() => {
-		console.log(bot);
 		if (bot) {
 			setValuePlayers('#')
 		}

@@ -76,14 +76,6 @@ const Bot = () => {
 		localStorage.setItem('valuePlayers', String(gameParametres.players.length)); // Сохранение кол-ва игроков в localStorage
 	}, [gameParametres.players]);
 
-	useEffect(() => {
-		console.log(processedBotInfo);
-	}, [processedBotInfo]);
-
-	useEffect(() => {
-		console.log(gameParametres);
-	}, [gameParametres]);
-
 
 	// Управление Кол-ва игроков и Ролей
 	useEffect(() => {
@@ -93,8 +85,6 @@ const Bot = () => {
 		}));
 		if (processedBotInfo.length !== 0 && processedBotInfo) {
 			const valuePlayers = processedBotInfo.length || '#';
-			console.log('БАААААААААААГ');
-			console.log(processedBotInfo);
 			setGameParametres(prevParams => ({
 				...prevParams,
 				valuePlayers: Number(valuePlayers),
