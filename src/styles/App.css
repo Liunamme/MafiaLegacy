@@ -68,33 +68,6 @@ button[disabled] {
 	font-weight: var(--FontBold);
 } /* Кнопки дисплея */
 
-.infoBlock .absoluteBtn {
-	position: absolute;
-	height: 2rem;
-	font-size: 1.2rem;
-	bottom: 20px;
-	right: 20px;
-	z-index: 3;
-} /* Кнопки дисплея с абсолютным позиционированием*/
-@media (max-width: 890px)  {
-
-	.infoBlock .absoluteBtn {
-		height: 1.5rem;
-		font-size: 1rem;
-		bottom: 5px;
-		right: 5px;
-	} /* Кнопки дисплея с абсолютным позиционированием*/
-}
-
-@media (max-height: 840px) {
-	.infoBlock .absoluteBtn {
-		height: 1.5rem;
-		font-size: 1rem;
-		bottom: 5px;
-		right: 5px;
-	} /* Кнопки дисплея с абсолютным позиционированием*/
-}
-
 /* /////////////////// */
 
 .content {

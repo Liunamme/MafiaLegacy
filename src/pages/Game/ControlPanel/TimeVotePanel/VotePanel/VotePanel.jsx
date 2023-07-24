@@ -47,14 +47,14 @@ const VotePanel = () => {
 										animate={{ opacity: 1, y: '0%' }}
 										exit={{ opacity: 0, y: '100%' }}
 										transition={{ duration: 0.5 }}
-										className={`${style.number} ${theme} voteNumber`}
+										className={`${style.number} ${theme} voteNumber ${gameParametres.voted.length >= 12 ? style.number12 : gameParametres.voted.length >= 8 ? style.number8 : gameParametres.voted.length >= 4 ? style.number4 : ''}`}
 									>
 										{bot ? item.id : `${item.id < 10 ? '0' + item.id : item.id}`}
 									</motion.div>
 								))}
 						</AnimatePresence>
 					</div>
-					<button className='absoluteBtn' onClick={voteClear}>Очистить</button>
+					<button className={`${style.absoluteBtn} absoluteBtn`} onClick={voteClear}>Очистить</button>
 				</InfoBlock>
 			</div>
 		</div>

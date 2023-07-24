@@ -25,71 +25,446 @@
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	gap: 10px;
+	column-gap: 10px;
 	flex-wrap: wrap;
 	overflow: hidden;
 	align-content: start;
 } /* Выставленные игроки*/
 
 .number {
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 6rem;
+	height: 6rem;
 	border: 0;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 600;
-	font-size: 3rem;
-} /* Выставленный игрок*/
-
-@media (max-width: 1280px) {
-	.voted {
-		gap: 10px;
-
-	} /* Выставленные игроки*/
-	
-	.number {
-		width: 2.5rem;
-		height: 2.5rem;
-		border: 0;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 2rem;
-		font-weight: 600;
-	} /* Выставленный игрок*/
+	font-size: 5rem;
 }
 
-@media (max-width: 890px) {
+.number4 {
+	width: 5rem;
+	height: 5rem;
+	font-size: 4.5rem;
+}
 
-	.voted {
-		gap: 0px;
+.number8 {
+	width: 4rem;
+	height: 4rem;
+	font-size: 3.8rem;
+}
 
-	} /* Выставленные игроки*/
+.number12 {
+	width: 4rem;
+	height: 4rem;
+	font-size: 3.7rem;
+}
+
+.absoluteBtn {
+	position: absolute;
+	height: 2rem;
+	font-size: 1.2rem;
+	bottom: 20px;
+	right: 20px;
+	z-index: 3;
+} /* Кнопки дисплея с абсолютным позиционированием*/
+
+
+/* АДАПТИВ */
+
+/* Вся ширина, не учитывая высоту */
+@media (max-width: 1630px) {
 	
-	.number {
-		width: 2rem;
-		height: 2rem;
-		border: 0;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 1.5rem;
-		font-weight: 600;
-	} /* Выставленный игрок*/
+	.number4 {
+		width: 4.3rem;
+		height: 4.3rem;
+		font-size: 3.8rem;
+	}
 
-	.panel h1 {
-		margin-bottom: 20px;
+	.number12 {
+		width: 3.3rem;
+		height: 3.3rem;
+		font-size: 2.8rem;
+	} 
+}
+
+@media (max-width: 1380px) {
+	.number12 {
+		width: 3rem;
+		height: 3rem;
+		font-size: 2.5rem;
+	} 
+
+	.number8 {
+		width: 3rem;
+		height: 3rem;
+		font-size: 2.8rem;
+	} 
+
+	.number4 {
+		width: 4rem;
+		height: 4rem;
+		font-size: 3.6rem;
 	}
 }
 
-@media (max-height: 840px) {
+@media (max-width: 1120px) {
+
+	.panel h1 {
+		margin-bottom: 5px;
+	}
+
+	.voted {
+		column-gap: 2px;
+	} /* Выставленные игроки*/
+
+	.number12 {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 2rem;
+	}
+
+	.number8 {
+		width: 2.7rem;
+		height: 2.7rem;
+		font-size: 2.3rem;
+	} 
+
+	.number4 {
+		width: 3.6rem;
+		height: 3.6rem;
+		font-size: 2.8rem;
+	}
+}
+
+@media (max-width: 980px) {
+	.absoluteBtn {
+		height: 1.5rem !important;
+		font-size: 1rem !important;
+		bottom: 10px !important;
+		right: 10px !important;
+}
+
+	.number {
+		width: 4.8rem;
+		height: 4.8rem;
+		font-size: 4rem;
+	}
+
+	.number12 {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 2rem;
+	}
+
+	.number8 {
+		width: 2.7rem;
+		height: 2.7rem;
+		font-size: 2.3rem;
+	} 
+
+	.number4 {
+		width: 3.4rem;
+		height: 3.4rem;
+		font-size: 2.8rem;
+	}
+}
+
+@media (max-width: 880px) {
+
+	.voted {
+		column-gap: 10px;
+	} /* Выставленные игроки*/
+
+	.number {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3rem;
+	}
+
+	.number12 {
+		width: 1.8rem;
+		height: 1.8rem;
+		font-size: 1.7rem;
+	} 
+
+	.number8 {
+		width: 2.2rem;
+		height: 2.2rem;
+		font-size: 2.2rem;
+	} 
+
+	.number4 {
+		width: 2.4rem;
+		height: 2.4rem;
+		font-size: 2.2rem;
+	}
+}
+/* //////////// */
+
+/* Вся высота, не учитывая ширину */
+@media (max-height: 880px){
 
 	.panel h1 {
 		margin-bottom: 0px;
 	}
-	
+
+	.number12 {
+		width: 3.7rem;
+		height: 3.7rem;
+		font-size: 3.5rem;
+	} 
+
+	.number8 {
+		width: 4rem;
+		height: 4rem;
+		font-size: 3.5rem;
+	}
+
+
 }
+
+@media (max-height: 780px){
+	.number8 {
+		width: 3.6rem;
+		height: 3.6rem;
+		font-size: 3.2rem;
+	}
+
+}
+/* ////////////////////// */
+
+/* Вся ширина на высоту 781px-880px */
+@media (max-width: 1470px) and (max-height: 880px){
+
+	.number12 {
+		width: 3rem;
+		height: 3rem;
+		font-size: 2.5rem;
+	} 
+
+	.number4 {
+		width: 4rem;
+		height: 4rem;
+		font-size: 3.5rem;
+	}
+
+	.absoluteBtn {
+		height: 1.5rem !important;
+		font-size: 1rem !important;
+		bottom: 10px !important;
+		right: 10px !important;
+}
+
+
+}
+
+@media (max-width: 1380px) and (max-height: 880px){
+
+
+	.number8 {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3rem;
+	}
+
+	.number4 {
+		width: 4rem;
+		height: 4rem;
+		font-size: 3.5rem;
+	}
+
+}
+
+@media (max-width: 1210px) and (max-height: 880px){
+
+	.voted {
+		column-gap: 5px;
+	} 
+
+	.number12 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.3rem;
+	} 
+
+	.number8 {
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 2.5rem;
+	} 
+
+}
+
+@media (max-width: 1120px) and (max-height: 880px){
+	.number4 {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3.2rem;
+	}
+
+}
+
+@media (max-width: 980px) and (max-height: 880px){
+	.panel h1 {
+		margin-bottom: 0px;
+	}
+	.number12 {
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.9rem;
+	} 
+
+	.number8 {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 2rem;
+	} 
+
+	.number4 {
+		width: 3rem;
+		height: 3rem;
+		font-size: 2.7rem;
+	}
+
+}
+
+@media (max-width: 880px) and (max-height: 880px){
+
+	.panel h1 {
+		margin-bottom: 0px;
+	}
+
+	.voted {
+		column-gap: 2px;
+	}
+
+	.number {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3rem;
+	}
+
+	.number12 {
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.7rem;
+	} 
+
+	.number8 {
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.7rem;
+	} 
+
+	.number4 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.2rem;
+	}
+
+}
+/* /////////////////////////// */
+
+/* Вся ширина на высоту 780px и ниже */
+@media (max-width: 1470px) and (max-height: 780px){
+
+	.number4 {
+		width: 4rem;
+		height: 4rem;
+		font-size: 3.5rem;
+	}
+
+}
+
+@media (max-width: 1380px) and (max-height: 780px){
+
+	.number12 {
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 2.4rem;
+	} 
+
+	.number8 {
+		width: 3.4rem;
+		height: 3.4rem;
+		font-size: 3rem;
+	}
+
+	.number4 {
+		width: 3.8rem;
+		height: 3.8rem;
+		font-size: 3.4rem;
+	}
+
+}
+
+@media (max-width: 1210px) and (max-height: 780px){
+
+	.number12 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.3rem;
+	} 
+
+	.number8 {
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 2.5rem;
+	} 
+
+}
+
+@media (max-width: 1120px) and (max-height: 780px){
+	
+	.number8 {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 2rem;
+	} 
+
+	.number4 {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3.2rem;
+	}
+
+}
+
+@media (max-width: 980px) and (max-height: 780px){
+	.number12 {
+		width: 1.8rem;
+		height: 1.8rem;
+		font-size: 1.7rem;
+	} 
+
+	.number4 {
+		width: 2.7rem;
+		height: 2.7rem;
+		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 880px) and (max-height: 780px){
+
+	.number12 {
+		width: 1.7rem;
+		height: 1.7rem;
+		font-size: 1.5rem;
+	} 
+
+	.number8 {
+		width: 1.7rem;
+		height: 1.7rem;
+		font-size: 1.5rem;
+	} 
+
+	.number4 {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 2.2rem;
+	}
+
+}
+/* /////////////////////////// */
