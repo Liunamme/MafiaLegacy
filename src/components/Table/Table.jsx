@@ -4,6 +4,9 @@ import { StoreContext } from '../../context/context';
 
 const Table = ({ data }) => {
 	const { theme, bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
+	const truncateText = (text, maxLength) => {
+		return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+	};
 	return (
 		<table className={`${style.table} tableResult`}>
 			<thead>
@@ -48,7 +51,7 @@ const Table = ({ data }) => {
 				{data.tbody.map((item, index) => (
 					<tr key={index} className={`${style.tableRow} ${theme} tableRow`}>
 						<td className={`${data.thead.id.className} ${style.tableColumn}`} style={bot ? { width: '170px' } : {}}>
-							{item.id.content}
+							{truncateText(item.id.content, 10)}
 						</td>
 						<td className='characteristicsPlayer'>
 							<div className={`${data.thead.role.className} ${data.thead.state ? 'roleTG' : ''} ${style.tableColumn}`}>

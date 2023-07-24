@@ -113,7 +113,7 @@ const PlayerPanel = () => {
 					item={selectedPlayer} // Передайте выбранного игрока в ModalKick
 				/>
 			)}
-			<div className={style.player}>
+			<div className={`${style.player} ${gameParametres.valuePlayers >= 15 ? style.player15 : gameParametres.valuePlayers >= 13 ? style.player13 : gameParametres.valuePlayers >= 11 ? style.player11 : ''}`}>
 				<div className={style.playersVote}>
 					{gameParametres.players.map((item, index) => (
 						<div key={index} className={style.playerVote}>

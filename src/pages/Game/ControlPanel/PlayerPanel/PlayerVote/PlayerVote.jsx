@@ -6,7 +6,9 @@ import { StoreContext } from '../../../../../context/context';
 
 const PlayerVote = ({ item, playerClick }) => {
 	const { theme, bot } = useContext(StoreContext); // Получение состояний из глобального хранилища
-
+	const truncateText = (text, maxLength) => {
+		return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+	};
 	// Отрисовка компонентов
 	return (
 		<div className={style.playerVote}>
@@ -15,7 +17,8 @@ const PlayerVote = ({ item, playerClick }) => {
 				disabled={item.kick}
 				onClick={() => playerClick(item, 'vote')}
 			>
-				{bot ? `${item.id} ${item.nickname}` : item.id < 10 ? '0' + item.id : item.id}
+				{bot ? `${item.id} ${truncateText(item.nickname, 12)}` : item.id < 10 ? '0' + item.id : item.id}
+
 			</button>
 		</div>
 	);
