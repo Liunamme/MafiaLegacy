@@ -35,7 +35,6 @@
 	align-items: center;
 }
 
-
 .infoPanel { 
 	display: flex;
 	flex-direction: column;
@@ -44,36 +43,16 @@
 	font-size: 1.5rem;
 } /* Информационный блок */
 
-
+/* Высота не учитывая ширину */
 @media (max-height: 880px) {
 	.infoPanel { 
 		font-size: 1.4rem;
-	} /* Информационный блок */
+	}
 	
 	.infoPanel h1 {
 		margin-bottom: 5px;
 	}
 }
-
-@media (max-width: 1860px) and (max-height: 880px) {
-	.infoPanel { 
-		font-size: 1.4rem;
-	} /* Информационный блок */
-}
-
-@media (max-width: 1250px) and (max-height: 880px) {
-	.infoPanel { 
-		font-size: 1.4rem;
-	} /* Информационный блок */
-}
-
-@media (max-width: 1020px) and (max-height: 880px) {
-	.infoPanel { 
-		font-size: 1.3rem;
-	} /* Информационный блок */
-
-}
-
 
 @media (max-height: 780px) {
 	.infoPanel { 
@@ -81,10 +60,67 @@
 	} 
 }
 
-@media (max-width: 1860px) and (max-height: 780px) {
+@media (max-height: 720px) {
 	.infoPanel { 
 		font-size: 1.1rem;
 	} 
+}
+/* //////////////// */
+
+/* Ширина не учитывая высоту */
+
+@media (max-width: 1600px) {
+	.infoPanel { 
+		font-size: 1.4rem;
+	} 
+}
+
+@media (max-width: 1020px) {
+	.infoPanel { 
+		font-size: 1.3rem;
+	} 
+
+}
+
+@media (max-width: 880px) {
+	.infoPanel { 
+		font-size: 1.2rem;
+	} 
+
+}
+/* /////////////////////// */
+
+/* Ширина при высоте 780px-880px */
+@media (max-width: 1750px) and (max-height: 880px) {
+	.infoPanel { 
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 1400px) and (max-height: 880px) {
+	.infoPanel { 
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 880px) and (max-height: 880px) {
+	.infoPanel { 
+		font-size: 1.1rem;
+	}
+}
+/* /////////////////////// */
+
+/* Ширина при высоте 720px-780px */
+@media (max-width: 1750px) and (max-height: 780px) {
+	.infoPanel { 
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 1520px) and (max-height: 780px) {
+	.infoPanel { 
+		font-size: 1.1rem;
+	}
 }
 
 @media (max-width: 1020px) and (max-height: 780px) {
@@ -93,24 +129,6 @@
 	} 
 
 }
-
-@media (max-height: 720px) {
-	.infoPanel { 
-		font-size: 1.1rem;
-	} 
-}
-
-@media (max-width: 1400px) and (max-height: 720px) {
-	.infoPanel { 
-		font-size: 1rem;
-	} 
-}
-
-@media (max-width: 1120px) and (max-height: 720px) {
-	.infoPanel { 
-		font-size: 0.9rem;
-	} 
-}
-
+/* /////////////////////// */
 
 /* ///////////////////////////////////// */

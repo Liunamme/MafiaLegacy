@@ -29,7 +29,7 @@ const RolesInfo = ({ gameParametres, setModalRoles }) => {
 							)
 						);
 					})}
-					<button className='absoluteBtn' onClick={() => setModalRoles(prev => !prev)}>Описание</button> {/* Кнопка модалки с ролями */}
+					<button className={`absoluteBtn ${style.absoluteBtn}`} onClick={() => setModalRoles(prev => !prev)}>Описание</button> {/* Кнопка модалки с ролями */}
 				</div>
 			</InfoBlock>
 		</div>

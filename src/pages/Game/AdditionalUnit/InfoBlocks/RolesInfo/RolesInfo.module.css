@@ -25,4 +25,24 @@
 	width: 20px;
 	z-index: 3;
 }
+
+.absoluteBtn {
+	position: absolute;
+	height: 2rem;
+	font-size: 1.2rem;
+	bottom: 20px;
+	right: 20px;
+	z-index: 3;
+} /* Кнопки дисплея с абсолютным позиционированием*/
+
+@media (max-width: 1020px) {
+	.absoluteBtn {
+		height: 1.5rem !important;
+		font-size: 1rem !important;
+		bottom: 10px !important;
+		right: 10px !important;
+	}
+}
+
+
 /* ///////////////////////////////////// */
