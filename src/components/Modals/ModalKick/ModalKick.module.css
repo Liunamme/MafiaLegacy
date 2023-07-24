@@ -30,8 +30,8 @@ h1 {
 	gap: 20px;
 }
 
-@media (max-width: 890px) {
-	
+/* Ширина не учитывая высоту */
+@media (max-width: 1120px) {
 	.btn {
 		width: 120px;
 		height: 50px;
@@ -41,9 +41,4 @@ h1 {
 		gap: 10px;
 	}
 }
-
-@media (max-height: 840px) {
-
-	
-	
-}
+/* ///////////////////// */

@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	font-size: 20px;
+	font-size: 1.5rem;
 	overflow: auto;
 }
 
@@ -19,3 +19,78 @@
 .modalRoles .role span{
 	width: 100%;
 }
+
+/* Ширина не учитывая высоту */
+@media (max-width: 1210px) {
+	.modalRoles {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 980px) {
+	.modalRoles {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 900px) {
+	.modalRoles {
+		font-size: 1.1rem;
+	}
+}
+/* ///////////////////// */
+
+/* Высота не учитывая ширину */
+@media (max-height: 780px) {
+	.modalRoles {
+		font-size: 1.4rem;
+	}
+
+}
+/* ///////////////////// */
+
+/* Ширина при высоте 781px-880px */
+@media (max-width: 1530px) and (max-height: 880px) {
+	.modalRoles {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 1290px) and (max-height: 880px) {
+	.modalRoles {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 980px) and (max-height: 880px) {
+	.modalRoles {
+		font-size: 1.15rem;
+	}
+}
+
+@media (max-width: 900px) and (max-height: 880px) {
+	.modalRoles {
+		font-size: 1.05rem;
+	}
+}
+/* ///////////////////// */
+
+/* Ширина при высоте 711px-780px */
+@media (max-width: 1100px) and (max-height: 780px) {
+	.modalRoles {
+		font-size: 1.15rem;
+	}
+}
+
+@media (max-width: 980px) and (max-height: 780px) {
+	.modalRoles {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 900px) and (max-height: 780px) {
+	.modalRoles {
+		font-size: 1rem;
+	}
+}
+/* ///////////////////// */
