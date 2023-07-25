@@ -10,8 +10,8 @@ const Autorization = () => {
 	// Состояния
 	const [isAuth, setIsAuth] = useState(JSON.parse(localStorage.getItem('Auth')) || false); // Состояние авторизации
 	const dataUsers = [
-		{ login: 'Demo', password: 'Demo', defaultTheme: 'dark1' },
-		{ login: 'Liunamme', password: 'termik2015', defaultTheme: 'personal2' },
+		{ login: 'Demo', password: 'Demo', defaultTheme: 'dark5' },
+		{ login: 'Liunamme', password: 'termik2015', defaultTheme: 'dark5' },
 		{ login: 'Diktatura', password: 'pass1', defaultTheme: 'dark4' },
 		{ login: 'SoulMary', password: 'pass2', defaultTheme: 'light1' },
 		{ login: 'VEY', password: 'blooda0mee', defaultTheme: 'dark4' },
