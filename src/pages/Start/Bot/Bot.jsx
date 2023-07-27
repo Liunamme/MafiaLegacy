@@ -29,7 +29,7 @@ const Bot = () => {
 			const processedData = matches.map((match) => {
 				const [id, nickname, roleWithEmoji] = match.split('"').filter((item) => item.trim() !== '');
 				const roleWithoutEmoji = roleWithEmoji.replace(/🔴|👹|⚫️|🕵️‍|🕵️|🤠|💉|💖|🔪|🚓/g, '').trim();
-				const roleReplaced = roleWithoutEmoji.replace('Мирный житель', 'Мирный');
+				const roleReplaced = roleWithoutEmoji.replace('Мирный житель', 'Мирный').replace('Дон Мафии', 'Дон');
 
 				// Найти объект роли из состояния 'roles' на основе обработанного имени роли
 				const roleObject = Object.values(roles).find((role) => role.name === roleReplaced);
