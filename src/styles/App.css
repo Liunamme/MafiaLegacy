@@ -210,7 +210,6 @@ button[disabled] {
 	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
-	gap: 10px;
 	cursor: pointer;
 	z-index: 10;
 }
@@ -219,21 +218,23 @@ button[disabled] {
 
 /* ................... */
 
-@media (max-height: 820px) {
-	.overflowContainer {
-		max-height: 610px; /* Задайте нужную максимальную высоту */
+@media (max-height: 880px) {
+
+}
+
+@media (max-height: 780px) {
+}
+
+@media (max-height: 720px) {
+	.user {
+		font-size: 1.2rem;
 	}
 }
 
-@media (max-height: 725px) {
-	.overflowContainer {
-  max-height: 530px; /* Задайте нужную максимальную высоту */
-	}
-}
-
-@media (max-height: 645px) {
-	.overflowContainer {
-  max-height: 450px; /* Задайте нужную максимальную высоту */
+@media (max-height: 580px) {
+	.user {
+		top: 0px;
+		font-size: 1rem;
 	}
 }
 /* ................................ */

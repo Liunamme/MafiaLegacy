@@ -22,7 +22,7 @@
 }
 
 .role span:first-of-type {
-	width: 20px;
+	width: max-content;
 	z-index: 3;
 }
 
@@ -35,12 +35,9 @@
 	z-index: 3;
 } /* Кнопки дисплея с абсолютным позиционированием*/
 
-@media (max-width: 1020px) {
-	.absoluteBtn {
-		height: 1.5rem !important;
-		font-size: 1rem !important;
-		bottom: 10px !important;
-		right: 10px !important;
+@media (max-height: 580px) {
+	.role {
+		gap: 3px;
 	}
 }
 

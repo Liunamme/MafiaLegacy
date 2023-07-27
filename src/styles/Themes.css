@@ -206,50 +206,34 @@
 	--SwitchCircle: #1AF580;
 }
 
-.personal1 .play::before {
+.personal1 .play::before, .personal2 .play::before {
 	border-color: transparent transparent transparent #FEEFA5; /* Цвета границ треугольника */
+	color: #FEEFA5;
 } 
 
-.personal1 .play::before:hover {
-	border-color: transparent transparent transparent #000000; /* Цвета границ треугольника */
-} 
 
-.personal1 .play, .personal1 .pause, .personal1 .reset {
+
+.personal1 .play, .personal1 .pause, .personal1 .reset, .personal2 .play, .personal2 .pause, .personal2 .reset {
 	background: var(--BtnBackgroundColor);
+	color: var(--BtnBackgroundColor);
 } 
 
-.personal1 .play:hover, .personal1 .pause:hover, .personal1 .reset:hover {
-	background: var(--BtnBackgroundColorActive);
-	color: var(--BtnColorActive);
-} 
 
-.personal1 .pause::before,
-.personal1 .pause::after,
-.personal1 .reset::before {
-	background: var(--BtnColor);
-}
-
-.personal1 .pause::before:hover,
-.personal1 .pause::after:hover,
-.personal1 .reset::before:hover {
-	background: var(--BtnColorActive) !important;
-}
-
-.personal1 button, .personal1 .btn {
+.personal1 .pause::before, .personal2 .pause::before,
+.personal1 .pause::after, .personal2 .pause::after,
+.personal1 .reset::before, .personal2 .reset::before {
 	color: var(--BtnColor);
 }
 
-.personal1 button:hover, .personal1 .btn:hover {
-	color: var(--BtnColorActive);
+
+.personal1 button, .personal1 .btn, .personal2 button, .personal2 .btn {
+	color: var(--BtnColor);
 }
 
-.personal1 .activeBtn {
+
+.personal1 .activeBtn, .personal2 .activeBtn {
 	color: var(--BtnColorActive);
 }  /* Цвет нажатых кнопок и текста в них */
-
-.personal1 .activeBtn:hover {
-	color: var(--BtnColor);
-} /* Цвет нажатых кнопок и текста в них при наведении */
 
 .personal2{
 	--InfoBlockColor: #ffc64a; /* Цвет текста информационного блока */
@@ -261,45 +245,6 @@
 	--SwitchBackgroundOFF: rgb(31, 24, 12);
 	--SwitchCircle: #ffc64a;
 }
-
-.personal2 .play::before {
-	border-color: transparent transparent transparent #FEEFA5; /* Цвета границ треугольника */
-} 
-
-.personal2 .play::before:hover {
-	border-color: transparent transparent transparent #000000; /* Цвета границ треугольника */
-} 
-
-.personal2 .play, .personal2 .pause, .personal2 .reset {
-	background: var(--BtnBackgroundColor);
-} 
-
-.personal2 .play:hover, .personal2 .pause:hover, .personal2 .reset:hover {
-	background: var(--BtnBackgroundColorActive);
-	color: var(--BtnColorActive);
-} 
-
-.personal2 .pause::before,
-.personal2 .pause::after,
-.personal2 .reset::before {
-	background: var(--BtnColor);
-}
-
-.personal2 .pause::before:hover,
-.personal2 .pause::after:hover,
-.personal2 .reset::before:hover {
-	background: var(--BtnColorActive) !important;
-}
-
-.personal2 button, .personal2 .btn {
-	color: var(--BtnColor);
-}
-
-
-.personal2 .activeBtn {
-	color: var(--BtnColorActive);
-}  /* Цвет нажатых кнопок и текста в них */
-
 
 .personal1 .themeBlock, .personal2 .themeBlock {
 	background-image: url(../media/img/pipboyPanel.svg);
@@ -404,11 +349,26 @@ button:hover, .btn:hover {
 /* Кнопки таймера */
 .play::before {
 	border-color: transparent transparent transparent var(--BlockBackgroundColor); /* Цвета границ треугольника */
+	color: var(--BlockBackgroundColor);
 } 
+
+.personal1 .play::before, .personal2 .play::before {
+	border-color: transparent transparent transparent var(--BlockColor); /* Цвета границ треугольника */
+	color: var(--BlockColor);
+} 
+
+.personal1 .pause::before, .personal2 .pause::before,
+.personal1 .pause::after, .personal2 .pause::after,
+.personal1 .reset::before, .personal2 .reset::before{
+	background: var(--BlockColor);
+	color: var(--BlockColor);
+}
+
 .pause::before,
 .pause::after,
 .reset::before {
 	background: var(--BlockBackgroundColor);
+	color: var(--BlockBackgroundColor);
 }
 
 .play, .pause, .reset {

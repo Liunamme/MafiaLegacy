@@ -70,7 +70,7 @@ const Timer = ({ timer, setTimer, isRunning, setIsRunning, type }) => {
 	return (
 		<div>
 			<div>
-				<InfoBlock>
+				<InfoBlock cN={type === 'local' && style.InfoBlockL || type === 'global' && style.InfoBlockG}>
 					<div className={(type === 'global' && style.timeG) || (type === 'local' && style.timeL)}>
 
 						{type === 'global' ? <span>{formatTime(hours)}</span> : null}

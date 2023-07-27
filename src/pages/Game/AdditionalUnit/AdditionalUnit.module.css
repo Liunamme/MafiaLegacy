@@ -52,6 +52,12 @@
 	.infoPanel h1 {
 		margin-bottom: 5px;
 	}
+	.infoPanel button {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
+	}
 }
 
 @media (max-height: 780px) {
@@ -61,10 +67,83 @@
 }
 
 @media (max-height: 720px) {
+	.endGameBtn  { /* Cтиль кнопки 'Завершить игру'*/
+		height: 30px;
+		min-height: 25px; 
+		font-size: 1rem;
+	}
+
 	.infoPanel { 
-		font-size: 1.1rem;
-	} 
+		font-size: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 5px 0px;
+	} /* Информационный блок */
 }
+
+@media (max-height: 580px) {
+	.endGameBtn  { /* Cтиль кнопки 'Завершить игру'*/
+		height: 30px;
+		min-height: 25px; 
+		font-size: 1rem;
+	}
+
+	.infoPanel { 
+		font-size: 0.8rem;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 5px 0px;
+	} /* Информационный блок */
+
+	.infoPanel h1 {
+		font-size: 1.2rem;
+	}
+
+	.infoPanel button {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.timePanel { /* Панель со временем игры */
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-height: 480px) {
+	.endGameBtn  { /* Cтиль кнопки 'Завершить игру'*/
+		height: 20px;
+		min-height: 20px; 
+		font-size: 0.7rem;
+	}
+
+	.infoPanel { 
+		font-size: 0.6rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		padding: 2px 0px;
+	} /* Информационный блок */
+
+	.infoPanel h1 {
+		font-size: 0.8rem;
+	}
+
+	.infoPanel button {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.timePanel { /* Панель со временем игры */
+		font-size: 0.7rem;
+	}
+}
+
 /* //////////////// */
 
 /* Ширина не учитывая высоту */
@@ -79,6 +158,12 @@
 	.infoPanel { 
 		font-size: 1.3rem;
 	} 
+	.infoPanel button {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
+	}
 
 }
 
@@ -128,6 +213,77 @@
 		font-size: 1rem;
 	} 
 
+}
+/* /////////////////////// */
+
+/* Ширина при высоте 581px-720px и ниже */
+
+@media (max-width: 1750px) and (max-height: 720px) {
+	.infoPanel { 
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 1520px) and (max-height: 720px) {
+	.infoPanel { 
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 1300px) and (max-height: 720px) {
+	.infoPanel { 
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 1220px) and (max-height: 720px) {
+	.infoPanel { 
+		font-size: 0.9rem;
+	} 
+
+}
+
+@media (max-width: 880px) and (max-height: 720px) {
+	.infoPanel { 
+		font-size: 0.9rem;
+	}
+}
+/* /////////////////////// */
+
+/* Ширина при высоте 481px-580px */
+
+@media (max-width: 1750px) and (max-height: 580px) {
+	.infoPanel { 
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 1120px) and (max-height: 580px) {
+	.infoPanel { 
+		font-size: 0.7rem;
+	} 
+
+}
+
+@media (max-width: 880px) and (max-height: 580px) {
+	.infoPanel { 
+		
+	}
+}
+/* /////////////////////// */
+
+/* Ширина при высоте 480px и ниже */
+
+@media (max-width: 1750px) and (max-height: 480px) {
+	.infoPanel { 
+		font-size: 0.6rem;
+	} 
+}
+
+@media (max-width: 880px) and (max-height: 480px) {
+	.infoPanel { 
+		font-size: 0.57rem;
+	} 
 }
 /* /////////////////////// */
 

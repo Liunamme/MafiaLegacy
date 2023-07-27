@@ -140,10 +140,10 @@
 
 @media (max-width: 980px) {
 	.absoluteBtn {
-		height: 1.5rem !important;
-		font-size: 1rem !important;
-		bottom: 10px !important;
-		right: 10px !important;
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
 }
 
 	.number {
@@ -233,6 +233,81 @@
 	}
 
 }
+
+@media (max-height: 720px){
+
+	.panel h1 {
+		font-size: 1.2rem;
+	}
+
+	.absoluteBtn {
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
+}
+
+	.number {
+		width: 5rem;
+		height: 5rem;
+		font-size: 4.5rem;
+	}
+
+	.number8 {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3.2rem;
+	}
+
+	.number12 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.4rem;
+	}
+
+}
+
+@media (max-height: 580px){
+
+	.number {
+		width: 3.8rem;
+		height: 3.8rem;
+		font-size: 3.2rem;
+	}
+
+	.number8 {
+		width: 3.1rem;
+		height: 3.1rem;
+		font-size: 2.8rem;
+	}
+
+	.number12 {
+		width: 2.2rem;
+		height: 2.2rem;
+		font-size: 2rem;
+	}
+	
+}
+
+@media (max-height: 480px){
+	.panel h1 {
+		font-size: 1rem;
+	}
+
+	.absoluteBtn {
+		height: 1rem;
+		font-size: 0.8rem;
+		bottom: 5px;
+		right: 5px;
+}
+
+	.number {
+		width: 2.3rem;
+		height: 2.3rem;
+		font-size: 2rem;
+	}
+	
+}
 /* ////////////////////// */
 
 /* Вся ширина на высоту 781px-880px */
@@ -251,10 +326,10 @@
 	}
 
 	.absoluteBtn {
-		height: 1.5rem !important;
-		font-size: 1rem !important;
-		bottom: 10px !important;
-		right: 10px !important;
+		height: 1.5rem;
+		font-size: 1rem;
+		bottom: 10px;
+		right: 10px;
 }
 
 
@@ -419,8 +494,8 @@
 @media (max-width: 1120px) and (max-height: 780px){
 	
 	.number8 {
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 2.4rem;
+		height: 2.4rem;
 		font-size: 2rem;
 	} 
 
@@ -429,6 +504,12 @@
 		height: 3.5rem;
 		font-size: 3.2rem;
 	}
+
+	.number12 {
+		width: 2.4rem;
+		height: 2.4rem;
+		font-size: 2rem;
+	} 
 
 }
 
@@ -455,8 +536,8 @@
 	} 
 
 	.number8 {
-		width: 1.7rem;
-		height: 1.7rem;
+		width: 1.8rem;
+		height: 1.8rem;
 		font-size: 1.5rem;
 	} 
 
@@ -465,6 +546,299 @@
 		height: 2.5rem;
 		font-size: 2.2rem;
 	}
+
+}
+/* /////////////////////////// */
+
+/* Вся ширина на высоту 581px-720px */
+@media (max-width: 1630px) and (max-height: 720px){
+
+	.number4 {
+		width: 3.8rem;
+		height: 3.8rem;
+		font-size: 3.3rem;
+	}
+
+	.number8 {
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 2.5rem;
+	}
+
+	.number12 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 1380px) and (max-height: 720px){
+	.number4 {
+		width: 3.4rem;
+		height: 3.4rem;
+		font-size: 3rem;
+	}
+
+	.number8 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.2rem;
+	}
+
+}
+
+@media (max-width: 1210px) and (max-height: 720px){
+	
+	
+	.number4 {
+		width: 3.4rem;
+		height: 3.4rem;
+		font-size: 2.8rem;
+	}
+
+	.number12 {
+		width: 2.4rem;
+		height: 2.4rem;
+		font-size: 2rem;
+	}
+
+}
+
+@media (max-width: 1120px) and (max-height: 720px){
+	
+	.number {
+		width: 3.5rem;
+		height: 3.5rem;
+		font-size: 3rem;
+	}
+
+	.number4 {
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 2.5rem;
+	}
+
+	.number8 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.2rem;
+	}
+
+	.number12 {
+		width: 1.9rem;
+		height: 1.9rem;
+		font-size: 1.6rem;
+	}
+
+
+}
+
+@media (max-width: 980px) and (max-height: 720px){
+	.number4 {
+		width: 2.6rem;
+		height: 2.6rem;
+		font-size: 2.3rem;
+	}
+
+	.number8 {
+		width: 1.9rem;
+		height: 1.9rem;
+		font-size: 1.7rem;
+	}
+	
+	.number12 {
+		width: 1.6rem;
+		height: 1.6rem;
+		font-size: 1.4rem;
+	}
+
+}
+
+@media (max-width: 880px) and (max-height: 720px){
+	.number4 {
+		width: 2.2rem;
+		height: 2.2rem;
+		font-size: 1.7rem;
+	}
+
+	.number8 {
+		width: 1.7rem;
+		height: 1.7rem;
+		font-size: 1.4rem;
+	}
+	.number12 {
+		width: 1.6rem;
+		height: 1.6rem;
+		font-size: 1.3rem;
+	}
+
+}
+/* /////////////////////////// */
+
+/* Вся ширина на высоту 481px-580px */
+@media (max-width: 1630px) and (max-height: 580px){
+	.number8 {
+		width: 2.2rem;
+		height: 2.2rem;
+		font-size: 2rem;
+	}
+
+	.number12 {
+		width: 1.8rem;
+		height: 1.8rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media (max-width: 1380px) and (max-height: 580px){
+	.number4 {
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 2.6rem;
+	}
+
+	.number8 {
+		width: 1.8rem;
+		height: 1.8rem;
+		font-size: 1.5rem;
+	}
+	
+}
+
+@media (max-width: 1210px) and (max-height: 580px){
+	
+	.number4 {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 2.2rem;
+	}
+
+	.number12 {
+		width: 1.8rem;
+		height: 1.8rem;
+		font-size: 1.6rem;
+	}
+
+}
+
+@media (max-width: 1120px) and (max-height: 580px){
+	
+	.number4 {
+		width: 1.9rem;
+		height: 1.9rem;
+		font-size: 1.5rem;
+	}
+
+}
+
+@media (max-width: 980px) and (max-height: 580px){
+
+}
+
+@media (max-width: 880px) and (max-height: 580px){
+
+	.number {
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.7rem;
+	}
+
+	.number4 {
+		width: 1.9rem;
+		height: 1.9rem;
+		font-size: 1.5rem;
+	}
+
+	.number8 {
+		width: 1.8rem;
+		height: 1.8rem;
+		font-size: 1.5rem;
+	}
+
+	.number12 {
+		width: 1.4rem;
+		height: 1.4rem;
+		font-size: 1.2rem;
+	}
+}
+/* /////////////////////////// */
+
+/* Вся ширина на высоту 480px и ниже */
+@media (max-width: 1630px) and (max-height: 480px){
+	.absoluteBtn {
+		height: 1rem;
+		font-size: 0.8rem;
+		bottom: 5px;
+		right: 5px;
+}
+
+.number4 {
+	width: 2.3rem;
+	height: 2.3rem;
+	font-size: 2rem;
+}
+
+.number12 {
+	width: 1.7rem;
+	height: 1.7rem;
+	font-size: 1.6rem;
+}
+}
+
+@media (max-width: 1380px) and (max-height: 480px){
+	.number12 {
+		width: 1.4rem;
+		height: 1.4rem;
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 1210px) and (max-height: 480px){
+
+}
+
+@media (max-width: 1120px) and (max-height: 480px){
+	.number {
+		width: 2.3rem;
+		height: 2.3rem;
+		font-size: 2rem;
+	}
+
+	.number8 {
+		width: 1.4rem;
+		height: 1.4rem;
+		font-size: 1.2rem;
+	}
+
+	.number12 {
+		width: 1.4rem;
+		height: 1.4rem;
+		font-size: 1.2rem;
+	}
+
+}
+
+@media (max-width: 980px) and (max-height: 480px){
+	.number4 {
+		width: 1.4rem;
+		height: 1.4rem;
+		font-size: 1.2rem;
+	}
+
+	.number8 {
+		width: 1.2rem;
+		height: 1.2rem;
+		font-size: 1rem;
+	}
+
+	.number12 {
+		width: 1.2rem;
+		height: 1.2rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 880px) and (max-height: 480px){
 
 }
 /* /////////////////////////// */

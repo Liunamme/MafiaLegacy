@@ -13,3 +13,28 @@
 	border-radius: 20px;
 	border: 0;
 }
+
+@media (max-width: 880px) {
+	.themeBtn{
+		right: 0px;
+	}
+	
+	.themeBtn button{
+		font-size: 0.8rem;
+		height: 20px;
+		padding: 0px 3px;
+	}
+}
+
+
+@media (max-height: 580px) {
+	.themeBtn{
+		top: 5px;
+	}
+	
+	.themeBtn button{
+		font-size: 1rem;
+		height: 25px;
+		padding: 0px 5px;
+	}
+}

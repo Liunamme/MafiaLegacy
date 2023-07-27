@@ -5,7 +5,7 @@ import style from './InfoBlock.module.css';
 //////////////////////////////////////////
 
 
-const InfoBlock = ({ children, classes }) => {
+const InfoBlock = ({ children, classes, cN }) => {
 	const { theme, offEffects } = useContext(StoreContext); // Получение состояний из глобального хранилища
 
 	const rootClassMainDiv = [
@@ -29,6 +29,7 @@ const InfoBlock = ({ children, classes }) => {
 		'infoBlock',
 		classes && classes.allTrue ? style.borderRadius25 : '',
 		classes && classes.OFF ? `${style.infoBlockOFF} selectOFF` : '',
+		cN
 	].join(' ');
 
 	// Отрисовка компонентов
