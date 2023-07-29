@@ -9,3 +9,21 @@
 	justify-content: center;
 	align-items: center;
 } /* Блок с таймером в TimeVotePanel*/
+
+@media (max-height: 720px) {
+	.timePanel{
+		font-size: 5rem;
+	}
+	}
+
+@media (max-height: 580px) {
+	.timePanel{
+		font-size: 3.8rem;
+	}
+}
+
+@media (max-height: 480px) {
+	.timePanel{
+		font-size: 3rem;
+	}
+}
