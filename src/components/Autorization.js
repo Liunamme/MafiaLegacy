@@ -23,6 +23,7 @@ const Autorization = () => {
 		{ login: 'Crazy007', password: 'pass9', defaultTheme: 'dark4' },
 		{ login: 'Cenny7', password: 'pass10', defaultTheme: 'dark5' },
 		{ login: 'DK46111', password: 'pass46111', defaultTheme: 'dark5' },
+		{ login: 'yayfeminism', password: 'yayfeminism', defaultTheme: 'dark5' },
 	] // База пользователей
 	// /////////////////////
 	// Отрисовка компонентов
