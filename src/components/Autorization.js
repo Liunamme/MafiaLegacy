@@ -27,6 +27,9 @@ const Autorization = () => {
 		{ login: 'upmazalumpa', password: 'upmazalumpa', defaultTheme: 'dark5' },
 		{ login: 'toriavenom', password: 'toriavenom', defaultTheme: 'dark5' },
 		{ login: 'viktor', password: 'viktor', defaultTheme: 'dark5' },
+		{ login: 'prostf1k', password: 'prostf1k', defaultTheme: 'dark5' },
+		{ login: 'Dantes', password: 'Dantes', defaultTheme: 'dark5' },
+		{ login: 'Koneko', password: 'Koneko', defaultTheme: 'dark5' },
 	] // База пользователей
 	// /////////////////////
 	// Отрисовка компонентов
