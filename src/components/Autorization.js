@@ -32,6 +32,7 @@ const Autorization = () => {
 		{ login: 'Koneko', password: 'Koneko', defaultTheme: 'dark5' },
 		{ login: 'ARTNK', password: 'ARTNK', defaultTheme: 'dark5' },
 		{ login: 'ssskam', password: 'ssskam', defaultTheme: 'dark5' },
+		{ login: 'Wanderreror', password: 'Wanderreror', defaultTheme: 'dark5' },
 	] // База пользователей
 	// /////////////////////
 	// Отрисовка компонентов
