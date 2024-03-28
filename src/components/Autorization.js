@@ -33,6 +33,12 @@ const Autorization = () => {
 		{ login: 'ARTNK', password: 'ARTNK', defaultTheme: 'dark5' },
 		{ login: 'ssskam', password: 'ssskam', defaultTheme: 'dark5' },
 		{ login: 'Wanderreror', password: 'Wanderreror', defaultTheme: 'dark5' },
+		{ login: 'Kami', password: 'Kami', defaultTheme: 'dark5' },
+		{ login: 'Lerochka', password: 'Lerochka', defaultTheme: 'dark5' },
+		{ login: 'banilord', password: 'banilord', defaultTheme: 'dark5' },
+		{ login: 'byk', password: 'byk', defaultTheme: 'dark5' },
+		{ login: 'jast91n', password: 'jast91n', defaultTheme: 'dark5' },
+		{ login: 'aafly', password: 'aafly', defaultTheme: 'dark5' },
 	] // База пользователей
 	// /////////////////////
 	// Отрисовка компонентов
