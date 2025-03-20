@@ -24,7 +24,7 @@ const Autorization = () => {
 		{ login: 'Cenny7', password: 'pass10', defaultTheme: 'dark5' },
 		{ login: 'DK46111', password: 'pass46111', defaultTheme: 'dark5' },
 		{ login: 'yayfeminism', password: 'yayfeminism', defaultTheme: 'dark5' },
-		{ login: 'upmazalumpa', password: 'upmazalumpa', defaultTheme: 'dark5' },
+		{ login: 'UmpaZalumpa', password: 'UmpaZalumpa', defaultTheme: 'dark5' },
 		{ login: 'toriavenom', password: 'toriavenom', defaultTheme: 'dark5' },
 		{ login: 'viktor', password: 'viktor', defaultTheme: 'dark5' },
 		{ login: 'prostf1k', password: 'prostf1k', defaultTheme: 'dark5' },
@@ -39,6 +39,9 @@ const Autorization = () => {
 		{ login: 'byk', password: 'byk', defaultTheme: 'dark5' },
 		{ login: 'jast91n', password: 'jast91n', defaultTheme: 'dark5' },
 		{ login: 'aafly', password: 'aafly', defaultTheme: 'dark5' },
+		{ login: 'earlgreen', password: 'earlgreen', defaultTheme: 'dark5' },
+		{ login: 'venkilou', password: 'venkilou', defaultTheme: 'dark5' },
+		{ login: 'vishelvokno', password: 'vishelvokno', defaultTheme: 'dark5' },
 	] // База пользователей
 	// /////////////////////
 	// Отрисовка компонентов
